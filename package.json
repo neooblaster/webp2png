@@ -1,0 +1,38 @@
+{
+    "name": "webp2png",
+    "version": "0.1.0",
+    "description": "CLI to easily convert .webp image file to .png",
+    "main": "bin/webp2png.js.js",
+    "scripts": {
+        "test": "webp2png -h"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+ssh://git@github.com/neooblaster/webp2png.git"
+    },
+    "keywords": [
+        "webp",
+        "png",
+        "convert",
+        "converter",
+        "gm",
+        "GraphicsMagick",
+        "graphicsmagick"
+    ],
+    "author": "Nicolas DUPRE",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/neooblaster/webp2png/issues"
+    },
+    "homepage": "https://github.com/neooblaster/webp2png#readme",
+    "bin": {
+        "mdsummarize": "./bin/webp2png.js"
+    },
+    "engines": {
+        "node": ">=12.4.0"
+    },
+    "dependencies": {
+        "gm": "^1.25.0",
+        "ifopt": "^1.6.1"
+    }
+}
