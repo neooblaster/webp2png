@@ -1,6 +1,6 @@
 {
     "name": "webp2png",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "description": "CLI to easily convert .webp image file to .png",
     "main": "bin/webp2png.js.js",
     "scripts": {
