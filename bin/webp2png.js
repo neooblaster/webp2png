@@ -171,7 +171,7 @@ Details :
  */
 function canRun() {
     // Do not run if help is requested
-    return !opt.isOption(['h', 'help']);
+    return (!opt.isOption(['h', 'help']) && (WEBPFILE && PNGFILE));
 }
 
 
