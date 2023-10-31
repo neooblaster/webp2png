@@ -140,7 +140,7 @@ function getFileContent (file) {
 function help(level = 0) {
     let name = 'webp2png';
     let helpText = `
-Usage : ${name} [OPTIONS] <inWebpFiePath> <OutPngFilePath>
+Usage : ${name} [OPTIONS] <inWebpFilePath> <OutPngFilePath>
 ------------------------------------------------------------
 
 {{${name}}} convert the .webp image file to .png.
@@ -152,6 +152,9 @@ Usage : ${name} [OPTIONS] <inWebpFiePath> <OutPngFilePath>
                   redirect log in a debug file.
 
 Details :
+  
+  The command line support other output image format.
+  Check GraphicsMagick for supported formats : http://www.graphicsmagick.org/formats.html 
   
     `;
 
