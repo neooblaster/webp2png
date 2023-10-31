@@ -26,7 +26,7 @@
     },
     "homepage": "https://github.com/neooblaster/webp2png#readme",
     "bin": {
-        "mdsummarize": "./bin/webp2png.js"
+        "webp2png": "./bin/webp2png.js"
     },
     "engines": {
         "node": ">=12.4.0"

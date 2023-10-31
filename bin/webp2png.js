@@ -140,7 +140,7 @@ function getFileContent (file) {
 function help(level = 0) {
     let name = 'webp2png';
     let helpText = `
-Usage : ${name} [OPTIONS]
+Usage : ${name} [OPTIONS] <inWebpFiePath> <OutPngFilePath>
 ------------------------------------------------------------
 
 {{${name}}} convert the .webp image file to .png.
