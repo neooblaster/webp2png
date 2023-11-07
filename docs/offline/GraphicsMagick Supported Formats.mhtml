@@ -1,0 +1,2588 @@
+From: <Saved by Blink>
+Snapshot-Content-Location: http://www.graphicsmagick.org/formats.html
+Subject: GraphicsMagick Supported Formats
+Date: Tue, 31 Oct 2023 16:24:31 -0000
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	type="text/html";
+	boundary="----MultipartBoundary--KA8azSkcpVUf9vwXhabozCwDP5IFrEYWTOrimXxAdu----"
+
+
+------MultipartBoundary--KA8azSkcpVUf9vwXhabozCwDP5IFrEYWTOrimXxAdu----
+Content-Type: text/html
+Content-ID: <frame-2820F4F4572CC2F1263C510AF8FE9F4A@mhtml.blink>
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://www.graphicsmagick.org/formats.html
+
+<!DOCTYPE html><html lang=3D"en"><head><meta http-equiv=3D"Content-Type" co=
+ntent=3D"text/html; charset=3DUTF-8">
+   =20
+    <meta content=3D"en" name=3D"language">
+	<title>GraphicsMagick Supported Formats</title>
+    <meta name=3D"viewport" content=3D"width=3Ddevice-width, initial-scale=
+=3D1.0">
+	<link media=3D"screen" href=3D"http://www.graphicsmagick.org/docutils-arti=
+cles.css" type=3D"text/css" rel=3D"stylesheet">
+
+</head>
+
+<body>
+
+<div class=3D"banner">
+<img src=3D"http://www.graphicsmagick.org/images/gm-107x76.png" alt=3D"Grap=
+hicMagick logo" width=3D"107" height=3D"76">
+<span class=3D"title">GraphicsMagick</span>
+<form action=3D"http://www.google.com/search">
+ =20
+ =20
+<span class=3D"nowrap"><input type=3D"text" name=3D"q" size=3D"25" maxlengt=
+h=3D"255">&nbsp;<input type=3D"submit" name=3D"sa" value=3D"Search"></span>
+</form>
+</div>
+
+
+<div class=3D"navmenu">
+<ul>
+  <li><a href=3D"http://www.graphicsmagick.org/index.html">Home</a></li>
+  <li><a href=3D"http://www.graphicsmagick.org/project.html">Project</a></l=
+i>
+  <li><a href=3D"http://www.graphicsmagick.org/download.html">Download</a><=
+/li>
+  <li><a href=3D"http://www.graphicsmagick.org/README.html">Install</a></li=
+>
+  <li><a href=3D"http://www.graphicsmagick.org/Hg.html">Source</a></li>
+  <li><a href=3D"http://www.graphicsmagick.org/NEWS.html">News</a> </li>
+  <li><a href=3D"http://www.graphicsmagick.org/utilities.html">Utilities</a=
+></li>
+  <li><a href=3D"http://www.graphicsmagick.org/programming.html">Programmin=
+g</a></li>
+  <li><a href=3D"http://www.graphicsmagick.org/reference.html">Reference</a=
+></li>
+</ul>
+</div>
+
+<div class=3D"document" id=3D"graphicsmagick-supported-formats">
+<h1 class=3D"title">GraphicsMagick Supported Formats</h1>
+<!-- -*- mode: rst -*- -->
+<!-- This text is in reStucturedText format, so it may look a bit odd. -->
+<!-- See http://docutils.sourceforge.net/rst.html for details. -->
+<p>GraphicsMagick uses an ASCII string known as "magick" (e.g. "GIF") to
+identify file formats, algorithms acting as formats, built-in images, and
+embedded profile types. After a file has been read or "pinged", the
+associated magick string is stored in the "magick" member of the Image
+structure, and is reported in the default output of 'gm identify'.</p>
+<p>GraphicsMagick supports reading over 92 major file formats (not includin=
+g
+sub-formats). The following table provides a summary of the supported
+image formats.</p>
+<table>
+<caption>Supported Image Formats</caption>
+<colgroup>
+<col style=3D"width: 14%">
+<col style=3D"width: 6%">
+<col style=3D"width: 28%">
+<col style=3D"width: 52%">
+</colgroup>
+<tbody>
+<tr><td><p>Format</p></td>
+<td><p>Mode</p></td>
+<td><p>Description</p></td>
+<td><p>Notes</p></td>
+</tr>
+<tr><td><p>ART</p></td>
+<td><p>RW</p></td>
+<td><p>PFS: 1st Publisher</p></td>
+<td><p>Format originally used on the Macintosh
+(MacPaint?) and later used for PFS: 1st
+Publisher clip art.</p></td>
+</tr>
+<tr><td><p><a class=3D"reference external" href=3D"https://aomediacodec.git=
+hub.io/av1-avif/">AVIF</a></p></td>
+<td><p>R</p></td>
+<td><p>AVIF Image File Format</p></td>
+<td><p>AV1 in a _HEIF container.  AVIF is supported
+via libheif if it supports AVIF decode.</p></td>
+</tr>
+<tr><td><p>AVS</p></td>
+<td><p>RW</p></td>
+<td><p>AVS X image</p></td>
+<td></td>
+</tr>
+<tr><td><p><a class=3D"reference external" href=3D"http://www.fileformat.in=
+fo/format/bmp/egff.htm">BMP</a></p></td>
+<td><p>RW</p></td>
+<td><p>Microsoft Windows bitmap</p></td>
+<td></td>
+</tr>
+<tr><td><p><a class=3D"reference external" href=3D"http://www.fileformat.in=
+fo/format/cals/egff.htm">CALS</a></p></td>
+<td><p>R</p></td>
+<td><p>Continuous Acquisition
+and Life-cycle Support
+Type 1 image</p></td>
+<td><p>Specified in MIL-R-28002 and MIL-PRF-28002.
+Standard blueprint archive format as used by the
+US military to replace microfiche.</p></td>
+</tr>
+<tr><td><p><a class=3D"reference external" href=3D"http://www.graphicsmagic=
+k.org/motion-picture.html">CIN</a></p></td>
+<td><p>R</p></td>
+<td><p>Kodak Cineon</p></td>
+<td><p>Kodak Cineon Log format (4.5 draft).
+Precursor to SMPTE <a class=3D"reference external" href=3D"http://www.graph=
+icsmagick.org/motion-picture.html">DPX</a></p></td>
+</tr>
+<tr><td><p><a class=3D"reference external" href=3D"http://www.fileformat.in=
+fo/format/cgm/egff.htm">CGM</a></p></td>
+<td><p>R</p></td>
+<td><p>Computer Graphics
+Metafile</p></td>
+<td><p>Requires <a class=3D"reference external" href=3D"http://www.agocg.ac=
+.uk/train/cgm/ralcgm.htm">ralcgm</a> to render CGM files.</p></td>
+</tr>
+<tr><td><p>CMYK</p></td>
+<td><p>RW</p></td>
+<td><p>Raw cyan, magenta,
+yellow, and black samples</p></td>
+<td><p>Use -size, -depth, -endian, and -interlace to
+specify the image width, height, depth, byte
+order, and interlace.</p></td>
+</tr>
+<tr><td><p>CUR</p></td>
+<td><p>R</p></td>
+<td><p>Microsoft Cursor Icon</p></td>
+<td></td>
+</tr>
+<tr><td><p>CUT</p></td>
+<td><p>R</p></td>
+<td><p>DR Halo</p></td>
+<td></td>
+</tr>
+<tr><td><p>DCM</p></td>
+<td><p>R</p></td>
+<td><p>Digital Imaging and
+Communications in
+Medicine (<a class=3D"reference external" href=3D"http://dicom.nema.org/">D=
+ICOM</a>) image</p></td>
+<td><p>Used by the medical community for images like
+X-rays. See the NEMA <a class=3D"reference external" href=3D"http://dicom.n=
+ema.org/">DICOM</a> web site for more
+information. <a class=3D"reference external" href=3D"http://dicom.nema.org/=
+">DICOM</a> is the basis for the
+<a class=3D"reference external" href=3D"http://www.geinspectiontechnologies=
+.com/en/products/software/diconde.html">DICONDE</a> format.</p></td>
+</tr>
+<tr><td><p>DCX</p></td>
+<td><p>RW</p></td>
+<td><p>ZSoft IBM PC multi-page
+Paintbrush image</p></td>
+<td></td>
+</tr>
+<tr><td><p>DIB</p></td>
+<td><p>RW</p></td>
+<td><p>Microsoft Windows Device
+Independent Bitmap</p></td>
+<td><p>DIB is a BMP file without the BMP header. Used
+to support embedded images in compound formats
+like WMF.</p></td>
+</tr>
+<tr><td><p><a class=3D"reference external" href=3D"http://www.graphicsmagic=
+k.org/motion-picture.html">DPX</a></p></td>
+<td><p>RW</p></td>
+<td><p>Digital Moving Picture
+Exchange</p></td>
+<td><p>RGB and grayscale are fully supported at 1, 8,
+10, 12, and 16 bits as per the <a class=3D"reference external" href=3D"http=
+://www.smpte.org/">SMPTE</a> 268M-2003
+(V2.0) specification. This includes support for
+images stored in a planar (multi-element)
+configuration and Cineon Log RGB. Rec. 601 and
+709 YCbCr are fully supported with 4:4:4 and
+4:2:2 subsampling. <a class=3D"reference external" href=3D"http://www.graph=
+icsmagick.org/motion-picture.html">DPX</a> is commonly used to
+store image frames in film and HDTV production.</p></td>
+</tr>
+<tr><td><p>EMF</p></td>
+<td><p>R</p></td>
+<td><p>Microsoft Enhanced
+Metafile (32-bit)</p></td>
+<td><p>Only available under Microsoft Windows.</p></td>
+</tr>
+<tr><td><p>EPDF</p></td>
+<td><p>RW</p></td>
+<td><p>Encapsulated Portable
+Document Format</p></td>
+<td></td>
+</tr>
+<tr><td><p>EPI</p></td>
+<td><p>RW</p></td>
+<td><p>Adobe Encapsulated
+PostScript Interchange
+format</p></td>
+<td><p>Requires <a class=3D"reference external" href=3D"http://pages.cs.wis=
+c.edu/~ghost/">Ghostscript</a> to read.</p></td>
+</tr>
+<tr><td><p>EPS</p></td>
+<td><p>RW</p></td>
+<td><p>Adobe Encapsulated
+PostScript</p></td>
+<td><p>Requires <a class=3D"reference external" href=3D"http://pages.cs.wis=
+c.edu/~ghost/">Ghostscript</a> to read.</p></td>
+</tr>
+<tr><td><p>EPS2</p></td>
+<td><p>W</p></td>
+<td><p>Adobe Level II
+Encapsulated PostScript</p></td>
+<td><p>Requires <a class=3D"reference external" href=3D"http://pages.cs.wis=
+c.edu/~ghost/">Ghostscript</a> to read.</p></td>
+</tr>
+<tr><td><p>EPS3</p></td>
+<td><p>W</p></td>
+<td><p>Adobe Level III
+Encapsulated PostScript</p></td>
+<td><p>Requires <a class=3D"reference external" href=3D"http://pages.cs.wis=
+c.edu/~ghost/">Ghostscript</a> to read.</p></td>
+</tr>
+<tr><td><p>EPSF</p></td>
+<td><p>RW</p></td>
+<td><p>Adobe Encapsulated
+PostScript</p></td>
+<td><p>Requires <a class=3D"reference external" href=3D"http://pages.cs.wis=
+c.edu/~ghost/">Ghostscript</a> to read.</p></td>
+</tr>
+<tr><td><p>EPSI</p></td>
+<td><p>RW</p></td>
+<td><p>Adobe Encapsulated
+PostScript Interchange
+format</p></td>
+<td><p>Requires <a class=3D"reference external" href=3D"http://pages.cs.wis=
+c.edu/~ghost/">Ghostscript</a> to read.</p></td>
+</tr>
+<tr><td><p>EPT</p></td>
+<td><p>RW</p></td>
+<td><p>Adobe Encapsulated
+PostScript Interchange
+format with <a class=3D"reference external" href=3D"http://www.simplesystem=
+s.org/libtiff/">TIFF</a> preview</p></td>
+<td><p>Requires <a class=3D"reference external" href=3D"http://pages.cs.wis=
+c.edu/~ghost/">Ghostscript</a> to read.</p></td>
+</tr>
+<tr><td><p>FAX</p></td>
+<td><p>RW</p></td>
+<td><p>Group 3 FAX</p></td>
+<td><p>Note that FAX machines use non-square pixels
+which are 1.5 times wider than they are tall but
+computer displays use square pixels, so FAX
+images may appear to be narrow unless they are
+explicitly resized using a resize specification
+of "150x100%". Please note that this is <em>not</em> a
+<a class=3D"reference external" href=3D"http://www.simplesystems.org/libtif=
+f/">TIFF</a> format.</p></td>
+</tr>
+<tr><td><p>FIG</p></td>
+<td><p>R</p></td>
+<td><p>FIG graphics format</p></td>
+<td><p>Requires TransFig.</p></td>
+</tr>
+<tr><td><p><a class=3D"reference external" href=3D"http://www.cv.nrao.edu/f=
+its/">FITS</a></p></td>
+<td><p>RW</p></td>
+<td><p>Flexible Image Transport
+System</p></td>
+<td></td>
+</tr>
+<tr><td><p>FPX</p></td>
+<td><p>RW</p></td>
+<td><p>FlashPix Format</p></td>
+<td><p>Requires FlashPix SDK.</p></td>
+</tr>
+<tr><td><p><a class=3D"reference external" href=3D"http://www.fileformat.in=
+fo/format/gif/egff.htm">GIF</a></p></td>
+<td><p>RW</p></td>
+<td><p>CompuServe Graphics
+Interchange Format</p></td>
+<td><p>8-bit RGB PseudoColor with up to 256 palette
+entires. Specify the format "GIF87" to write the
+older version 87a of the format.</p>
+<p>The PNG format provides a superior set of
+features to GIF. Consider using PNG format
+rather than GIF if clients are able to read PNG.</p>
+</td>
+</tr>
+<tr><td><p>GRAY</p></td>
+<td><p>RW</p></td>
+<td><p>Raw gray samples</p></td>
+<td><p>Use -size, -depth, and -endian to specify the
+image width, height, depth, and byte order.</p></td>
+</tr>
+<tr><td><p>GRAYA</p></td>
+<td><p>RW</p></td>
+<td><p>Raw gray samples + alpha</p></td>
+<td><p>Use -size, -depth, and -endian to specify the
+image width, height, depth, and byte order.</p></td>
+</tr>
+<tr><td><p><a class=3D"reference external" href=3D"https://en.wikipedia.org=
+/wiki/High_Efficiency_Image_File_Format">HEIF</a></p></td>
+<td><p>R</p></td>
+<td><p>High Efficiency Image
+File Format (with
+h.265/HEVC encoding)</p></td>
+<td><p>HEIF is a container format supporting multiple
+codecs.  HEIF with h.265/HEVC encoding
+is supported via libheif and libde265.</p></td>
+</tr>
+<tr><td><p>HPGL</p></td>
+<td><p>R</p></td>
+<td><p>HP-GL plotter language</p></td>
+<td><p>Requires <a class=3D"reference external" href=3D"http://www.gnu.org/=
+software/hp2xx/hp2xx.html">hp2xx</a> 3.2.0 or later</p></td>
+</tr>
+<tr><td><p>HTML</p></td>
+<td><p>RW</p></td>
+<td><p>Hypertext Markup Language
+with a client-side image
+map</p></td>
+<td><p>Also known as "HTM". Requires html2ps to read.</p></td>
+</tr>
+<tr><td><p>ICO</p></td>
+<td><p>R</p></td>
+<td><p>Microsoft icon</p></td>
+<td><p>Also known as "ICON".</p></td>
+</tr>
+<tr><td><p><a class=3D"reference external" href=3D"http://www.jpeg.org/">JB=
+IG</a></p></td>
+<td><p>RW</p></td>
+<td><p>Joint Bi-level Image
+experts Group file
+interchange format</p></td>
+<td><p>Also known as "BIE" and "JBG". Requires
+<a class=3D"reference external" href=3D"http://www.cl.cam.ac.uk/~mgk25/jbig=
+kit/">jbigkit</a> 1.0 or later</p></td>
+</tr>
+<tr><td><p><a class=3D"reference external" href=3D"http://www.libmng.com/">=
+JNG</a></p></td>
+<td><p>RW</p></td>
+<td><p><a class=3D"reference external" href=3D"http://www.jpeg.org/">JPEG</=
+a> Network Graphics</p></td>
+<td><p><a class=3D"reference external" href=3D"http://www.jpeg.org/">JPEG</=
+a> in a PNG-style wrapper with transparency.
+Requires libjpeg and libpng-1.0.2 or later,
+libpng-1.2.5 or later recommended.</p></td>
+</tr>
+<tr><td><p>JP2</p></td>
+<td><p>RW</p></td>
+<td><p>JPEG-2000 JP2 File Format
+Syntax</p></td>
+<td><p>Requires <a class=3D"reference external" href=3D"http://www.ece.uvic=
+.ca/~mdadams/jasper/">jasper</a> 1.600.0 or later</p></td>
+</tr>
+<tr><td><p>JPC</p></td>
+<td><p>RW</p></td>
+<td><p>JPEG-2000 Code Stream
+Syntax</p></td>
+<td><p>Requires <a class=3D"reference external" href=3D"http://www.ece.uvic=
+.ca/~mdadams/jasper/">jasper</a> 1.600.0 or later</p></td>
+</tr>
+<tr><td><p><a class=3D"reference external" href=3D"http://www.jpeg.org/">JP=
+EG</a></p></td>
+<td><p>RW</p></td>
+<td><p>Joint Photographic
+Experts Group JFIF format</p></td>
+<td><p>Requires jpegsrc.v6b.tar.gz or later</p></td>
+</tr>
+<tr><td><p><a class=3D"reference external" href=3D"https://github.com/libjx=
+l/libjxl/">JXL</a></p></td>
+<td><p>RW</p></td>
+<td><p>JPEG XL</p></td>
+<td><p>Requires JPEG XL 0.7 or later</p></td>
+</tr>
+<tr><td><p>MAN</p></td>
+<td><p>R</p></td>
+<td><p>Unix reference manual
+pages</p></td>
+<td><p>Requires that GNU groff and Ghostcript are
+installed.</p></td>
+</tr>
+<tr><td><p>MAT</p></td>
+<td><p>RW</p></td>
+<td><p>MATLAB image format</p></td>
+<td><p>Coming from <a class=3D"reference external" href=3D"http://www.mathw=
+orks.com/">MathWorks</a> for storing matrices.
+Currently supported types are 2D matrices: byte,
+word, double, complex and 3D matrices containing
+RGB [x*y*3] byte, word.</p></td>
+</tr>
+<tr><td><p><a class=3D"reference external" href=3D"http://www.graphicsmagic=
+k.org/miff.html">MIFF</a></p></td>
+<td><p>RW</p></td>
+<td><p>Magick image file format</p></td>
+<td><p>ImageMagick's lossless image format (with
+ASCII header) which ensures that no image
+attributes understood by ImageMagick or
+GraphicsMagick are lost.</p></td>
+</tr>
+<tr><td><p>MONO</p></td>
+<td><p>RW</p></td>
+<td><p>Bi-level bitmap in
+least-significant-byte
+first order</p></td>
+<td></td>
+</tr>
+<tr><td><p><a class=3D"reference external" href=3D"http://www.libmng.com/">=
+MNG</a></p></td>
+<td><p>RW</p></td>
+<td><p>Multiple-image Network
+Graphics</p></td>
+<td><p>Requires libpng-1.0.2 or later, libpng-1.2.5 or
+later recommended.</p></td>
+</tr>
+<tr><td><p><a class=3D"reference external" href=3D"http://www.mpeg.org/">MP=
+EG</a></p></td>
+<td><p>RW</p></td>
+<td><p>Motion Picture Experts
+Group file interchange
+format (version 1)</p></td>
+<td><p>Requires mpeg2vidcodec_v12.tar.gz.</p></td>
+</tr>
+<tr><td><p><a class=3D"reference external" href=3D"http://www.mpeg.org/">M2=
+V</a></p></td>
+<td><p>RW</p></td>
+<td><p>Motion Picture Experts
+Group file interchange
+format (version 2)</p></td>
+<td><p>Requires mpeg2vidcodec_v12.tar.gz.</p></td>
+</tr>
+<tr><td><p>MPC</p></td>
+<td><p>RW</p></td>
+<td><p>Magick Persistent Cache
+image file format</p></td>
+<td><p>The native "in-memory" GraphicsMagick
+uncompressed file format. This file format is
+identical to that used by Open ImageMagick to
+represent images in memory and is read in "zero
+time" via memory mapping. The MPC format is not
+portable and is not suitable as an archive
+format. It is suitable as an intermediate format
+for high-performance image processing.</p>
+<p>The MPC format requires two files to support one
+image. When writing the MPC format, a file with
+extension ".mpc" is used to store information
+about the image, while a file with extension
+<span class=3D"docutils literal">.cache</span> stores the image pixels. The=
+ storage
+space required by a MPC image (or an image in
+memory) may be calculated by the equation
+(QuantumDepth*Rows*Columns*5)/8.</p>
+</td>
+</tr>
+<tr><td><p>MSL</p></td>
+<td><p>RW</p></td>
+<td><p>Magick Scripting Language</p></td>
+<td><p>MSL is the XML-based scripting language
+supported by the conjure utility.</p></td>
+</tr>
+<tr><td><p><a class=3D"reference external" href=3D"http://www.fileformat.in=
+fo/format/mtv/egff.htm">MTV</a></p></td>
+<td><p>RW</p></td>
+<td><p>MTV Raytracing image
+format</p></td>
+<td></td>
+</tr>
+<tr><td><p>MVG</p></td>
+<td><p>RW</p></td>
+<td><p>Magick Vector Graphics.</p></td>
+<td><p>The native GraphicsMagick vector metafile
+format. A text file containing vector drawing
+commands accepted by <a class=3D"reference external" href=3D"http://www.gra=
+phicsmagick.org/convert.html">convert</a>'s -draw option.</p></td>
+</tr>
+<tr><td><p>OTB</p></td>
+<td><p>RW</p></td>
+<td><p>On-the-air Bitmap</p></td>
+<td></td>
+</tr>
+<tr><td><p>P7</p></td>
+<td><p>RW</p></td>
+<td><p>Xv's Visual Schnauzer
+thumbnail format</p></td>
+<td></td>
+</tr>
+<tr><td><p>PALM</p></td>
+<td><p>RW</p></td>
+<td><p>Palm pixmap</p></td>
+<td></td>
+</tr>
+<tr><td><p><a class=3D"reference external" href=3D"http://netpbm.sourceforg=
+e.net/doc/pam.html">PAM</a></p></td>
+<td><p>RW</p></td>
+<td><p>Portable Arbitrary Map
+format</p></td>
+<td><p>Superset of PNM (PPM, PGM, PPM) raw type formats.
+Supports bilevel, gray, RGB, CMYK, alpha channel.</p></td>
+</tr>
+<tr><td><p><a class=3D"reference external" href=3D"http://www.fileformat.in=
+fo/format/pbm/egff.htm">PBM</a></p></td>
+<td><p>RW</p></td>
+<td><p>Portable bitmap format
+(black and white)</p></td>
+<td></td>
+</tr>
+<tr><td><p>PCD</p></td>
+<td><p>RW</p></td>
+<td><p>Photo CD</p></td>
+<td><p>The maximum resolution written is 768x512 pixels
+since larger images require huffman compression
+(which is not supported).</p></td>
+</tr>
+<tr><td><p>PCDS</p></td>
+<td><p>RW</p></td>
+<td><p>Photo CD</p></td>
+<td><p>Decode with the sRGB color tables.</p></td>
+</tr>
+<tr><td><p>PCL</p></td>
+<td><p>W</p></td>
+<td><p>HP Page Control Language</p></td>
+<td><p>For output to HP laser printers.</p></td>
+</tr>
+<tr><td><p><a class=3D"reference external" href=3D"http://www.fileformat.in=
+fo/format/pcx/egff.htm">PCX</a></p></td>
+<td><p>RW</p></td>
+<td><p>ZSoft IBM PC Paintbrush
+file</p></td>
+<td></td>
+</tr>
+<tr><td><p>PDB</p></td>
+<td><p>RW</p></td>
+<td><p>Palm Database ImageViewer
+Format</p></td>
+<td></td>
+</tr>
+<tr><td><p>PDF</p></td>
+<td><p>RW</p></td>
+<td><p>Portable Document Format</p></td>
+<td><p>Requires <a class=3D"reference external" href=3D"http://pages.cs.wis=
+c.edu/~ghost/">Ghostscript</a> to read.</p></td>
+</tr>
+<tr><td><p>PFA</p></td>
+<td><p>R</p></td>
+<td><p>Postscript Type 1 font
+(ASCII)</p></td>
+<td><p>Opening as file returns a preview image.</p></td>
+</tr>
+<tr><td><p>PFB</p></td>
+<td><p>R</p></td>
+<td><p>Postscript Type 1 font
+(binary)</p></td>
+<td><p>Opening as file returns a preview image.</p></td>
+</tr>
+<tr><td><p>PGM</p></td>
+<td><p>RW</p></td>
+<td><p>Portable graymap format
+(gray scale)</p></td>
+<td></td>
+</tr>
+<tr><td><p>PICON</p></td>
+<td><p>RW</p></td>
+<td><p>Personal Icon</p></td>
+<td></td>
+</tr>
+<tr><td><p>PICT</p></td>
+<td><p>RW</p></td>
+<td><p>Apple Macintosh QuickDraw
+/PICT file</p></td>
+<td></td>
+</tr>
+<tr><td><p>PIX</p></td>
+<td><p>R</p></td>
+<td><p>Alias/Wavefront RLE image
+format</p></td>
+<td></td>
+</tr>
+<tr><td><p>PNG</p></td>
+<td><p>RW</p></td>
+<td><p>Portable Network Graphics</p></td>
+<td><p>Requires libpng-1.0.2 or later, libpng-1.2.5 or
+later recommended.</p></td>
+</tr>
+<tr><td><p>PNM</p></td>
+<td><p>RW</p></td>
+<td><p>Portable anymap</p></td>
+<td><p>PNM is a family of formats supporting portable
+bitmaps (PBM) , graymaps (PGM), and pixmaps
+(PPM). There is no file format associated with
+pnm itself. If PNM is used as the output format
+specifier, then GraphicsMagick automatically
+selects the most appropriate format to represent
+the image.</p>
+<p>The default is to write the binary version of
+the formats. Use '-quality 0' to write the
+ASCII version of the formats.</p>
+</td>
+</tr>
+<tr><td><p>PPM</p></td>
+<td><p>RW</p></td>
+<td><p>Portable pixmap format
+(color)</p></td>
+<td></td>
+</tr>
+<tr><td><p>PS</p></td>
+<td><p>RW</p></td>
+<td><p>Adobe PostScript file</p></td>
+<td><p>Requires <a class=3D"reference external" href=3D"http://pages.cs.wis=
+c.edu/~ghost/">Ghostscript</a> to read.</p></td>
+</tr>
+<tr><td><p>PS2</p></td>
+<td><p>RW</p></td>
+<td><p>Adobe Level II PostScript
+file</p></td>
+<td><p>Requires <a class=3D"reference external" href=3D"http://pages.cs.wis=
+c.edu/~ghost/">Ghostscript</a> to read.</p></td>
+</tr>
+<tr><td><p>PS3</p></td>
+<td><p>RW</p></td>
+<td><p>Adobe Level III
+PostScript file</p></td>
+<td><p>Requires <a class=3D"reference external" href=3D"http://pages.cs.wis=
+c.edu/~ghost/">Ghostscript</a> to read.</p></td>
+</tr>
+<tr><td><p>PSD</p></td>
+<td><p>RW</p></td>
+<td><p>Adobe Photoshop bitmap
+file</p></td>
+<td><p>PSD format is no longer supported since the
+1.3.24 release.</p></td>
+</tr>
+<tr><td><p>PTIF</p></td>
+<td><p>RW</p></td>
+<td><p>Pyramid encoded <a class=3D"reference external" href=3D"http://www.s=
+implesystems.org/libtiff/">TIFF</a></p></td>
+<td><p>Multi-resolution <a class=3D"reference external" href=3D"http://www.=
+simplesystems.org/libtiff/">TIFF</a> containing successively
+smaller versions of the image down to the size
+of an icon. The desired sub-image size may be
+specified when reading via the -size option.</p></td>
+</tr>
+<tr><td><p><a class=3D"reference external" href=3D"http://www.photoworks.co=
+m/">PWP</a></p></td>
+<td><p>R</p></td>
+<td><p>Seattle File Works
+multi-image file</p></td>
+<td></td>
+</tr>
+<tr><td><p>RAS</p></td>
+<td><p>R</p></td>
+<td><p><a class=3D"reference external" href=3D"http://www.topol.cz/english/=
+share/index.php3">TopoL</a> (GIS)</p></td>
+<td></td>
+</tr>
+<tr><td><p>RAD</p></td>
+<td><p>R</p></td>
+<td><p><a class=3D"reference external" href=3D"http://radsite.lbl.gov/radia=
+nce/HOME.html">Radiance</a> image file</p></td>
+<td><p>Requires that ra_ppm from the <a class=3D"reference external" href=
+=3D"http://radsite.lbl.gov/radiance/HOME.html">Radiance</a> software
+package be installed.</p></td>
+</tr>
+<tr><td><p>RGB</p></td>
+<td><p>RW</p></td>
+<td><p>Raw red, green, and blue
+samples</p></td>
+<td><p>Use -size, -depth, -endian, and -interlace to
+specify the image width, height, depth, byte
+order, and interlace.</p></td>
+</tr>
+<tr><td><p>RGBA</p></td>
+<td><p>RW</p></td>
+<td><p>Raw red, green, and blue
+and matte samples</p></td>
+<td><p>Use -size, -depth, -endian, and -interlace to
+specify the image width, height, depth, byte
+order, and interlace.</p></td>
+</tr>
+<tr><td><p>RLA</p></td>
+<td><p>R</p></td>
+<td><p>Alias/Wavefront image
+file</p></td>
+<td></td>
+</tr>
+<tr><td><p>RLE</p></td>
+<td><p>R</p></td>
+<td><p>Utah Run length encoded
+image file</p></td>
+<td></td>
+</tr>
+<tr><td><p><a class=3D"reference external" href=3D"http://oreilly.com/www/c=
+enters/gff/formats/scitex/">SCT</a></p></td>
+<td><p>R</p></td>
+<td><p>Scitex Continuous Tone
+Picture</p></td>
+<td></td>
+</tr>
+<tr><td><p><a class=3D"reference external" href=3D"http://www.algonet.se/~c=
+yren/sfw/">SFW</a></p></td>
+<td><p>R</p></td>
+<td><p>Seattle File Works image</p></td>
+<td></td>
+</tr>
+<tr><td><p>SGI</p></td>
+<td><p>RW</p></td>
+<td><p>Irix RGB image</p></td>
+<td></td>
+</tr>
+<tr><td><p>SHTML</p></td>
+<td><p>W</p></td>
+<td><p>Hypertext Markup Language
+client-side image map</p></td>
+<td><p>Used to write HTML clickable image maps based on
+a the output of montage or a format which
+supports tiled images such as <a class=3D"reference external" href=3D"http:=
+//www.graphicsmagick.org/miff.html">MIFF</a>.</p></td>
+</tr>
+<tr><td><p>SUN</p></td>
+<td><p>RW</p></td>
+<td><p>SUN Rasterfile</p></td>
+<td></td>
+</tr>
+<tr><td><p><a class=3D"reference external" href=3D"http://www.w3.org/Graphi=
+cs/SVG/">SVG</a></p></td>
+<td><p>RW</p></td>
+<td><p>Scalable Vector Graphics</p></td>
+<td><p>Requires <a class=3D"reference external" href=3D"http://xmlsoft.org/=
+">libxml2</a> and <a class=3D"reference external" href=3D"http://www.freety=
+pe.org/">freetype2</a>. Note that <a class=3D"reference external" href=3D"h=
+ttp://www.w3.org/Graphics/SVG/">SVG</a>
+is a very complex specification so support is
+still not complete.</p></td>
+</tr>
+<tr><td><p>TGA</p></td>
+<td><p>RW</p></td>
+<td><p>Truevision Targa image</p></td>
+<td><p>Also known as formats "ICB", "VDA", and "VST".</p></td>
+</tr>
+<tr><td><p><a class=3D"reference external" href=3D"http://www.simplesystems=
+.org/libtiff/">TIFF</a></p></td>
+<td><p>RW</p></td>
+<td><p>Tagged Image File Format</p></td>
+<td><p>Also known as "TIF". Requires tiff-v3.5.4.tar.gz
+or later. Note that since the Unisys LZW patent
+recently expired, libtiff may still require a
+separate LZW patch in order to support LZW. LZW
+is included in libtiff by default since v3.7.0.</p></td>
+</tr>
+<tr><td><p>TIM</p></td>
+<td><p>R</p></td>
+<td><p>PSX TIM file</p></td>
+<td></td>
+</tr>
+<tr><td><p>TTF</p></td>
+<td><p>R</p></td>
+<td><p>TrueType font file</p></td>
+<td><p>Requires <a class=3D"reference external" href=3D"http://www.freetype=
+.org/">freetype2</a>. Opening as file returns a
+preview image.</p></td>
+</tr>
+<tr><td><p>TXT</p></td>
+<td><p>RW</p></td>
+<td><p>Raw text file</p></td>
+<td></td>
+</tr>
+<tr><td><p>UIL</p></td>
+<td><p>W</p></td>
+<td><p>X-Motif UIL table</p></td>
+<td></td>
+</tr>
+<tr><td><p>UYVY</p></td>
+<td><p>RW</p></td>
+<td><p>Interleaved YUV raw image</p></td>
+<td><p>Use -size command line option to specify width
+and height.</p></td>
+</tr>
+<tr><td><p>VICAR</p></td>
+<td><p>RW</p></td>
+<td><p>VICAR rasterfile format</p></td>
+<td></td>
+</tr>
+<tr><td><p><a class=3D"reference external" href=3D"http://www.fileformat.in=
+fo/format/viff/egff.htm">VIFF</a></p></td>
+<td><p>RW</p></td>
+<td><p>Khoros Visualization
+Image File Format</p></td>
+<td></td>
+</tr>
+<tr><td><p><a class=3D"reference external" href=3D"http://www.openmobileall=
+iance.org/Technical/wapindex.aspx">WBMP</a></p></td>
+<td><p>RW</p></td>
+<td><p>Wireless bitmap</p></td>
+<td><p>Support for uncompressed monochrome only.</p></td>
+</tr>
+<tr><td><p><a class=3D"reference external" href=3D"https://developers.googl=
+e.com/speed/webp/">WebP</a></p></td>
+<td><p>RW</p></td>
+<td><p>Google's WebP</p></td>
+<td><p>Requires libwebp from
+"<a class=3D"reference external" href=3D"https://developers.google.com/spee=
+d/webp/">https://developers.google.com/speed/webp/</a>".
+WebP is good for small photos for the web and is
+supported by Google's Chrome and Firefox.</p></td>
+</tr>
+<tr><td><p><a class=3D"reference external" href=3D"http://www.fileformat.in=
+fo/format/wmf/egff.htm">WMF</a></p></td>
+<td></td>
+<td><p>Windows Metafile</p></td>
+<td><p>Requires libwmf. By default, renders WMF files
+using the dimensions specified by the metafile
+header. Use the -density option to adjust the
+output resolution, and thereby adjust the ouput
+size. The default output resolution is 72DPI so
+"-density 144" results in an image twice as
+large as the default. Use -background <a class=3D"reference external" href=
+=3D"http://www.graphicsmagick.org/color.html">color</a> to
+specify the WMF background color (default white)
+or -texture filename to specify a background
+texture image.</p></td>
+</tr>
+<tr><td><p><a class=3D"reference external" href=3D"http://www.fileformat.in=
+fo/format/wpg/egff.htm">WPG</a></p></td>
+<td><p>R</p></td>
+<td><p>Word Perfect Graphics
+File</p></td>
+<td></td>
+</tr>
+<tr><td><p><a class=3D"reference external" href=3D"http://www.fileformat.in=
+fo/format/xbm/egff.htm">XBM</a></p></td>
+<td><p>RW</p></td>
+<td><p>X Windows system bitmap,
+black and white only</p></td>
+<td><p>Used by the X Windows System to store monochrome
+icons.</p></td>
+</tr>
+<tr><td><p>XCF</p></td>
+<td><p>R</p></td>
+<td><p>GIMP image</p></td>
+<td></td>
+</tr>
+<tr><td><p><a class=3D"reference external" href=3D"http://www.fileformat.in=
+fo/format/xpm/egff.htm">XPM</a></p></td>
+<td><p>RW</p></td>
+<td><p>X Windows system pixmap</p></td>
+<td><p>Also known as "PM". Used by the X Windows System
+to store color icons.</p></td>
+</tr>
+<tr><td><p><a class=3D"reference external" href=3D"http://www.fileformat.in=
+fo/format/xwd/egff.htm">XWD</a></p></td>
+<td><p>RW</p></td>
+<td><p>X Windows system window
+dump</p></td>
+<td><p>Used by the X Windows System to save/display
+screen dumps.</p></td>
+</tr>
+<tr><td><p>YUV</p></td>
+<td><p>RW</p></td>
+<td><p>CCIR 601 4:1:1</p></td>
+<td><p>Use -size command line option to specify width
+and height.</p></td>
+</tr>
+</tbody>
+</table>
+<p>GraphicsMagick supports a number of image format specifications which
+refer to images prepared via an algorithm, or input/output targets. The
+following table lists these pseudo image formats:</p>
+<table>
+<caption>Pseudo Image Formats</caption>
+<colgroup>
+<col style=3D"width: 13%">
+<col style=3D"width: 6%">
+<col style=3D"width: 25%">
+<col style=3D"width: 56%">
+</colgroup>
+<tbody>
+<tr><td><p>Tag</p></td>
+<td><p>Mode</p></td>
+<td><p>Description</p></td>
+<td><p>Notes</p></td>
+</tr>
+<tr><td><p>CAPTION</p></td>
+<td><p>R</p></td>
+<td><p>Image caption</p></td>
+<td><p>Draws text on a canvas image with size specified by <cite>-size</cit=
+e>
+canvas color as specified by <cite>-background' (default white),
+and text stroke and fill colors as specified by `-stroke</cite>
+and <cite>-fill</cite>.  Capable of supporting multi-line text.</p></td>
+</tr>
+<tr><td><p>CLIPBOARD</p></td>
+<td><p>RW</p></td>
+<td><p>Windows Clipboard</p></td>
+<td><p>Only available under Microsoft Windows.</p></td>
+</tr>
+<tr><td><p>FRACTAL</p></td>
+<td><p>R</p></td>
+<td><p>Plasma fractal image</p></td>
+<td></td>
+</tr>
+<tr><td><p>GRADIENT</p></td>
+<td><p>R</p></td>
+<td><p>Gradual passing from
+one shade to another</p></td>
+<td><p>Returns a rendered gradient image using the
+specified image size. Specify the desired
+shading as part of the filename.  For example:</p>
+<blockquote>
+<p><span class=3D"docutils literal"><span class=3D"pre">gradient:red-blue</=
+span></span> or <span class=3D"docutils literal"><span class=3D"pre">gradie=
+nt:#F00-#00F</span></span></p>
+</blockquote>
+</td>
+</tr>
+<tr><td><p>HISTOGRAM</p></td>
+<td><p>W</p></td>
+<td><p>Histogram of the image</p></td>
+<td><p>Generate an RGB histogram of the input image.
+The output format is always ImageMagick <a class=3D"reference external" hre=
+f=3D"http://www.graphicsmagick.org/miff.html">MIFF</a>
+(regardless of file extension). For example:</p>
+<blockquote>
+<p><span class=3D"docutils literal">gm convert file.tiff histogram:file.mif=
+f</span></p>
+</blockquote>
+</td>
+</tr>
+<tr><td><p>IDENTITY</p></td>
+<td><p>R</p></td>
+<td><p><a class=3D"reference external" href=3D"http://www.quelsolaar.com/te=
+chnology/clut.html">Hald CLUT</a> identity
+image</p></td>
+<td><p>Generate a Hald CLUT identity image of a specified order.
+The order is specified as an argument like "IDENTITY:8".
+The default order is eight, producing a 512x512 image.</p></td>
+</tr>
+<tr><td><p>INFO</p></td>
+<td><p>W</p></td>
+<td><p>Image descriptive
+information and
+statistics</p></td>
+<td><p>Writes descriptive information similar to 'identify'</p></td>
+</tr>
+<tr><td><p>LABEL</p></td>
+<td><p>R</p></td>
+<td><p>Text image format</p></td>
+<td><p>Specify the desired text as the filename (e.g.
+"label:This is a label").</p></td>
+</tr>
+<tr><td><p>MAP</p></td>
+<td><p>RW</p></td>
+<td><p>Colormap intensities
+and indices</p></td>
+<td><p>Set -depth to set the sample size of the
+intensities; indices are 16-bit if colors &gt;
+256.</p></td>
+</tr>
+<tr><td><p>MATTE</p></td>
+<td><p>W</p></td>
+<td><p>MATTE format</p></td>
+<td><p>Write only.</p></td>
+</tr>
+<tr><td><p>NULL</p></td>
+<td><p>RW</p></td>
+<td><p>NULL image</p></td>
+<td><p>Useful for creating blank tiles with montage
+(use "NULL:"). Also useful as an output format
+when evaluating image read performance.</p></td>
+</tr>
+<tr><td><p>PLASMA</p></td>
+<td><p>R</p></td>
+<td><p>Plasma fractal image</p></td>
+<td><p>Creates an image using the plasma fractal. For
+example:</p>
+<blockquote>
+<p><span class=3D"docutils literal">gm convert <span class=3D"pre">-size</s=
+pan> 640x480 plasma: file.miff</span></p>
+</blockquote>
+</td>
+</tr>
+<tr><td><p>PREVIEW</p></td>
+<td><p>W</p></td>
+<td><p>Show a preview an image
+enhancement, effect, or
+f/x</p></td>
+<td><p>Creates a preview montage of images prepared
+over a parameteric range in order to assist
+with parameter selection. Specify the desired
+preview type via the -preview option). The
+output file is always written in the
+ImageMagick <a class=3D"reference external" href=3D"http://www.graphicsmagi=
+ck.org/miff.html">MIFF</a> format.</p>
+<p>For example:</p>
+<blockquote>
+<p><span class=3D"docutils literal">gm convert file.tiff <span class=3D"pre=
+">-preview</span> gamma preview:file.miff</span></p>
+</blockquote>
+</td>
+</tr>
+<tr><td><p>PRINT</p></td>
+<td><p>W</p></td>
+<td><p>Send image to your
+computer printer</p></td>
+<td><p>Unix users may set the PRINTER (for 'lp') or
+LPDEST (for 'lpr') environment variables to
+select the desired printer.</p></td>
+</tr>
+<tr><td><p>SCAN</p></td>
+<td><p>R</p></td>
+<td><p>Import image from a
+scanner device</p></td>
+<td><p>Requires <a class=3D"reference external" href=3D"http://www.mostang.=
+com/sane/">SANE</a> Specify the device name and path
+as the filename (e.g. "scan:mustek:/dev/scanner").</p></td>
+</tr>
+<tr><td><p>STEGANO</p></td>
+<td><p>R</p></td>
+<td><p>Steganographic image</p></td>
+<td><p>Use -size command line option to specify width,
+height, and offset of the steganographic image</p></td>
+</tr>
+<tr><td><p>TILE</p></td>
+<td><p>R</p></td>
+<td><p>Tiled image</p></td>
+<td><p>Create a tiled version of an image at by tiling
+a image. Use -size to specify the tiled image
+size. The image is specified similar to
+"TILE:image.miff".
+For example:</p>
+<blockquote>
+<p><span class=3D"docutils literal">gm convert <span class=3D"pre">-size</s=
+pan> 800x600 tile:image.jpg out.jpg</span></p>
+</blockquote>
+</td>
+</tr>
+<tr><td><p>VID</p></td>
+<td><p>RW</p></td>
+<td><p>Visual Image Directory</p></td>
+<td><p>Used to create a thumbnailed directory (tiled
+thumbnails) of a set of images which may be
+used to select images to view via the display
+program, or saved to a <a class=3D"reference external" href=3D"http://www.g=
+raphicsmagick.org/miff.html">MIFF</a> or SHTML file.
+For example:</p>
+<blockquote>
+<p><span class=3D"docutils literal">gm convert <span class=3D"pre">vid:"*.j=
+pg"</span> index.miff</span></p>
+</blockquote>
+</td>
+</tr>
+<tr><td><p>WIN</p></td>
+<td><p>RW</p></td>
+<td><p>Select image from or
+display image to your
+computer screen</p></td>
+<td><p>Only supported under Microsoft Windows. For example:</p>
+<blockquote>
+<p><span class=3D"docutils literal">gm convert file.jpg <span class=3D"pre"=
+>-rotate</span> 90 win:</span></p>
+</blockquote>
+</td>
+</tr>
+<tr><td><p>X</p></td>
+<td><p>RW</p></td>
+<td><p>Select image from or
+display image to your X
+server screen</p></td>
+<td><p>Also see the import and display programs. For example:</p>
+<blockquote>
+<p><span class=3D"docutils literal">gm convert file.jpg <span class=3D"pre"=
+>-rotate</span> 90 x:</span></p>
+</blockquote>
+</td>
+</tr>
+<tr><td><p>XC</p></td>
+<td><p>R</p></td>
+<td><p>Canvas image of
+specified color</p></td>
+<td><p>Useful to create solid color "canvas" images.
+Use -size and -depth to specify the image
+width, height, and depth. Example XC color
+specifications include "XC:red" and "XC:#
+FF0000".  See the <a class=3D"reference external" href=3D"http://www.graphi=
+csmagick.org/color.html">color</a> reference for the
+numeric values used for named colors.  For example:</p>
+<blockquote>
+<p><span class=3D"docutils literal">gm convert <span class=3D"pre">-size</s=
+pan> 640x480 xc:red red.jpg</span></p>
+</blockquote>
+</td>
+</tr>
+</tbody>
+</table>
+<p>GraphicsMagick includes a number of built-in (embedded) images which may
+be referenced as if they were an image file. The <span class=3D"docutils li=
+teral">IMAGE:</span> format tag may
+be used via the syntax "IMAGE:name" to request an embedded image (e.g.
+<span class=3D"docutils literal">IMAGE:LOGO</span>). For backwards compatib=
+ility, the image specifications
+<span class=3D"docutils literal">GRANITE:</span>, <span class=3D"docutils l=
+iteral">LOGO:</span>, <span class=3D"docutils literal">NETSCAPE:</span>, an=
+d <span class=3D"docutils literal">ROSE:</span> may also be used to request
+images with those names.</p>
+<p>A new canvas image of a specified size may be created using one of these=
+ pattern
+images using a command similar to:</p>
+<pre class=3D"literal-block">gm convert -size 640x480 PATTERN:BRICKS bricks=
+.miff</pre>
+<p>The TILE: virtual image type may also be used similar to:</p>
+<pre class=3D"literal-block">gm convert -size 640x480 TILE:IMAGE:BRICKS bri=
+cks.miff</pre>
+<table>
+<caption>Built-In Images And Patterns</caption>
+<colgroup>
+<col style=3D"width: 22%">
+<col style=3D"width: 37%">
+<col style=3D"width: 41%">
+</colgroup>
+<tbody>
+<tr><td><p>Name</p></td>
+<td><p>Description</p></td>
+<td><p>Notes/Sample</p></td>
+</tr>
+<tr><td><p>BRICKS</p></td>
+<td><p>16x16 brick pattern</p></td>
+<td><p><img alt=3D"bricks" src=3D"http://www.graphicsmagick.org/images/patt=
+erns/bricks.png"></p></td>
+</tr>
+<tr><td><p>CHECKERBOARD</p></td>
+<td><p>30x30 checkerboard pattern</p></td>
+<td><p><img alt=3D"checkerboard" src=3D"http://www.graphicsmagick.org/image=
+s/patterns/checkerboard.png"></p></td>
+</tr>
+<tr><td><p>CIRCLES</p></td>
+<td><p>16x16 circles pattern</p></td>
+<td><p><img alt=3D"circles" src=3D"http://www.graphicsmagick.org/images/pat=
+terns/circles.png"></p></td>
+</tr>
+<tr><td><p>CROSSHATCH</p></td>
+<td><p>8x4 crosshatch pattern</p></td>
+<td><p><img alt=3D"crosshatch" src=3D"http://www.graphicsmagick.org/images/=
+patterns/crosshatch.png"></p></td>
+</tr>
+<tr><td><p>CROSSHATCH30</p></td>
+<td><p>8x4 crosshatch pattern with lines
+at 30 degrees.</p></td>
+<td><p><img alt=3D"crosshatch30" src=3D"http://www.graphicsmagick.org/image=
+s/patterns/crosshatch30.png"></p></td>
+</tr>
+<tr><td><p>CROSSHATCH45</p></td>
+<td><p>8x4 crosshatch pattern with lines
+at 45 degrees.</p></td>
+<td><p><img alt=3D"crosshatch45" src=3D"http://www.graphicsmagick.org/image=
+s/patterns/crosshatch45.png"></p></td>
+</tr>
+<tr><td><p>FISHSCALES</p></td>
+<td><p>16x8 fish scales pattern</p></td>
+<td><p><img alt=3D"fishscales" src=3D"http://www.graphicsmagick.org/images/=
+patterns/fishscales.png"></p></td>
+</tr>
+<tr><td><p>GRANITE</p></td>
+<td><p>128x128 granite texture pattern</p></td>
+<td><p><img alt=3D"granite" src=3D"http://www.graphicsmagick.org/images/pat=
+terns/granite.png"></p></td>
+</tr>
+<tr><td><p>GRAY0</p></td>
+<td><p>32x32 0% intensity gray</p></td>
+<td><p><img alt=3D"gray0" src=3D"http://www.graphicsmagick.org/images/patte=
+rns/gray0.png"></p></td>
+</tr>
+<tr><td><p>GRAY5</p></td>
+<td><p>32x32 5% intensity gray</p></td>
+<td><p><img alt=3D"gray5" src=3D"http://www.graphicsmagick.org/images/patte=
+rns/gray5.png"></p></td>
+</tr>
+<tr><td><p>GRAY10</p></td>
+<td><p>32x32 10% intensity gray</p></td>
+<td><p><img alt=3D"gray10" src=3D"http://www.graphicsmagick.org/images/patt=
+erns/gray10.png"></p></td>
+</tr>
+<tr><td><p>GRAY15</p></td>
+<td><p>32x32 15% intensity gray</p></td>
+<td><p><img alt=3D"gray15" src=3D"http://www.graphicsmagick.org/images/patt=
+erns/gray15.png"></p></td>
+</tr>
+<tr><td><p>GRAY20</p></td>
+<td><p>32x32 20% intensity gray</p></td>
+<td><p><img alt=3D"gray20" src=3D"http://www.graphicsmagick.org/images/patt=
+erns/gray20.png"></p></td>
+</tr>
+<tr><td><p>GRAY25</p></td>
+<td><p>32x32 25% intensity gray</p></td>
+<td><p><img alt=3D"gray25" src=3D"http://www.graphicsmagick.org/images/patt=
+erns/gray25.png"></p></td>
+</tr>
+<tr><td><p>GRAY30</p></td>
+<td><p>32x32 30% intensity gray</p></td>
+<td><p><img alt=3D"gray30" src=3D"http://www.graphicsmagick.org/images/patt=
+erns/gray30.png"></p></td>
+</tr>
+<tr><td><p>GRAY35</p></td>
+<td><p>32x32 35% intensity gray</p></td>
+<td><p><img alt=3D"gray35" src=3D"http://www.graphicsmagick.org/images/patt=
+erns/gray35.png"></p></td>
+</tr>
+<tr><td><p>GRAY40</p></td>
+<td><p>32x32 40% intensity gray</p></td>
+<td><p><img alt=3D"gray40" src=3D"http://www.graphicsmagick.org/images/patt=
+erns/gray40.png"></p></td>
+</tr>
+<tr><td><p>GRAY45</p></td>
+<td><p>32x32 45% intensity gray</p></td>
+<td><p><img alt=3D"gray45" src=3D"http://www.graphicsmagick.org/images/patt=
+erns/gray45.png"></p></td>
+</tr>
+<tr><td><p>GRAY50</p></td>
+<td><p>32x32 50% intensity gray</p></td>
+<td><p><img alt=3D"gray50" src=3D"http://www.graphicsmagick.org/images/patt=
+erns/gray50.png"></p></td>
+</tr>
+<tr><td><p>GRAY55</p></td>
+<td><p>32x32 55% intensity gray</p></td>
+<td><p><img alt=3D"gray55" src=3D"http://www.graphicsmagick.org/images/patt=
+erns/gray55.png"></p></td>
+</tr>
+<tr><td><p>GRAY60</p></td>
+<td><p>32x32 60% intensity gray</p></td>
+<td><p><img alt=3D"gray60" src=3D"http://www.graphicsmagick.org/images/patt=
+erns/gray60.png"></p></td>
+</tr>
+<tr><td><p>GRAY65</p></td>
+<td><p>32x32 65% intensity gray</p></td>
+<td><p><img alt=3D"gray65" src=3D"http://www.graphicsmagick.org/images/patt=
+erns/gray65.png"></p></td>
+</tr>
+<tr><td><p>GRAY70</p></td>
+<td><p>32x32 70% intensity gray</p></td>
+<td><p><img alt=3D"gray70" src=3D"http://www.graphicsmagick.org/images/patt=
+erns/gray70.png"></p></td>
+</tr>
+<tr><td><p>GRAY75</p></td>
+<td><p>32x32 75% intensity gray</p></td>
+<td><p><img alt=3D"gray75" src=3D"http://www.graphicsmagick.org/images/patt=
+erns/gray75.png"></p></td>
+</tr>
+<tr><td><p>GRAY80</p></td>
+<td><p>32x32 80% intensity gray</p></td>
+<td><p><img alt=3D"gray80" src=3D"http://www.graphicsmagick.org/images/patt=
+erns/gray80.png"></p></td>
+</tr>
+<tr><td><p>GRAY85</p></td>
+<td><p>32x32 85% intensity gray</p></td>
+<td><p><img alt=3D"gray85" src=3D"http://www.graphicsmagick.org/images/patt=
+erns/gray85.png"></p></td>
+</tr>
+<tr><td><p>GRAY90</p></td>
+<td><p>32x32 90% intensity gray</p></td>
+<td><p><img alt=3D"gray90" src=3D"http://www.graphicsmagick.org/images/patt=
+erns/gray90.png"></p></td>
+</tr>
+<tr><td><p>GRAY95</p></td>
+<td><p>32x32 95% intensity gray</p></td>
+<td><p><img alt=3D"gray95" src=3D"http://www.graphicsmagick.org/images/patt=
+erns/gray95.png"></p></td>
+</tr>
+<tr><td><p>GRAY100</p></td>
+<td><p>32x32 100% intensity gray</p></td>
+<td><p><img alt=3D"gray100" src=3D"http://www.graphicsmagick.org/images/pat=
+terns/gray100.png"></p></td>
+</tr>
+<tr><td><p>HEXAGONS</p></td>
+<td><p>30x18 hexagon pattern</p></td>
+<td><p><img alt=3D"hexagons" src=3D"http://www.graphicsmagick.org/images/pa=
+tterns/hexagons.png"></p></td>
+</tr>
+<tr><td><p>HORIZONTAL</p></td>
+<td><p>8x4 horizontal line pattern</p></td>
+<td><p><img alt=3D"horizontal" src=3D"http://www.graphicsmagick.org/images/=
+patterns/horizontal.png"></p></td>
+</tr>
+<tr><td><p>HORIZONTALSAW</p></td>
+<td><p>16x8 horizontal saw-tooth pattern</p></td>
+<td><p><img alt=3D"horizontalsaw" src=3D"http://www.graphicsmagick.org/imag=
+es/patterns/horizontalsaw.png"></p></td>
+</tr>
+<tr><td><p>HS_BDIAGONAL</p></td>
+<td><p>8x8 backward diagonal line pattern
+(45 degrees slope)</p></td>
+<td><p><img alt=3D"hs_bdiagonal" src=3D"http://www.graphicsmagick.org/image=
+s/patterns/hs_bdiagonal.png"></p></td>
+</tr>
+<tr><td><p>HS_CROSS</p></td>
+<td><p>8x8 cross line pattern</p></td>
+<td><p><img alt=3D"hs_cross" src=3D"http://www.graphicsmagick.org/images/pa=
+tterns/hs_cross.png"></p></td>
+</tr>
+<tr><td><p>HS_DIAGCROSS</p></td>
+<td><p>8x8 diagonal line cross pattern
+(45 degrees slope)</p></td>
+<td><p><img alt=3D"hs_diagcross" src=3D"http://www.graphicsmagick.org/image=
+s/patterns/hs_diagcross.png"></p></td>
+</tr>
+<tr><td><p>HS_FDIAGONAL</p></td>
+<td><p>8x8 forward diagonal line pattern
+(45 degrees slope)</p></td>
+<td><p><img alt=3D"hs_fdiagonal" src=3D"http://www.graphicsmagick.org/image=
+s/patterns/hs_fdiagonal.png"></p></td>
+</tr>
+<tr><td><p>HS_HORIZONTAL</p></td>
+<td><p>8x8 horizontal line pattern</p></td>
+<td><p><img alt=3D"hs_horizontal" src=3D"http://www.graphicsmagick.org/imag=
+es/patterns/hs_horizontal.png"></p></td>
+</tr>
+<tr><td><p>HS_VERTICAL</p></td>
+<td><p>8x8 vertical line pattern</p></td>
+<td><p><img alt=3D"hs_vertical" src=3D"http://www.graphicsmagick.org/images=
+/patterns/hs_vertical.png"></p></td>
+</tr>
+<tr><td><p>LEFT30</p></td>
+<td><p>8x4 forward diagonal pattern (30
+degrees slope)</p></td>
+<td><p><img alt=3D"left30" src=3D"http://www.graphicsmagick.org/images/patt=
+erns/left30.png"></p></td>
+</tr>
+<tr><td><p>LEFT45</p></td>
+<td><p>8x8 forward diagonal line pattern
+(45 degrees slope)</p></td>
+<td><p><img alt=3D"left45" src=3D"http://www.graphicsmagick.org/images/patt=
+erns/left45.png"></p></td>
+</tr>
+<tr><td><p>LEFTSHINGLE</p></td>
+<td><p>24x24 left shingle pattern</p></td>
+<td><p><img alt=3D"leftshingle" src=3D"http://www.graphicsmagick.org/images=
+/patterns/leftshingle.png"></p></td>
+</tr>
+<tr><td><p>LOGO</p></td>
+<td><p>640x480, GraphicsMagick Logo</p></td>
+<td><p><img alt=3D"logo" src=3D"http://www.graphicsmagick.org/images/gm-125=
+x80t.png"></p></td>
+</tr>
+<tr><td><p>NETSCAPE</p></td>
+<td><p>216x144 image using colors in
+Netscape 216 (6x6x6 ) color cube.</p></td>
+<td><p>Most commonly used with the
+<a class=3D"reference external" href=3D"http://www.graphicsmagick.org/conve=
+rt.html">convert</a>/<a class=3D"reference external" href=3D"http://www.gra=
+phicsmagick.org/mogrify.html">mogrify</a> -map option to
+create <em>web safe</em> images.</p></td>
+</tr>
+<tr><td><p>OCTAGONS</p></td>
+<td><p>16x16 octagons pattern</p></td>
+<td><p><img alt=3D"octagons" src=3D"http://www.graphicsmagick.org/images/pa=
+tterns/octagons.png"></p></td>
+</tr>
+<tr><td><p>RIGHT30</p></td>
+<td><p>8x4 backward diagonal line pattern
+(30 degrees)</p></td>
+<td><p><img alt=3D"right30" src=3D"http://www.graphicsmagick.org/images/pat=
+terns/right30.png"></p></td>
+</tr>
+<tr><td><p>RIGHT45</p></td>
+<td><p>8x8 backward diagonal line pattern
+(30 degrees)</p></td>
+<td><p><img alt=3D"right45" src=3D"http://www.graphicsmagick.org/images/pat=
+terns/right45.png"></p></td>
+</tr>
+<tr><td><p>RIGHTSHINGLE</p></td>
+<td><p>24x24 right shingle pattern</p></td>
+<td><p><img alt=3D"rightshingle" src=3D"http://www.graphicsmagick.org/image=
+s/patterns/rightshingle.png"></p></td>
+</tr>
+<tr><td><p>ROSE</p></td>
+<td><p>70x46, Picture of a rose.</p></td>
+<td><p><img alt=3D"rose" src=3D"http://www.graphicsmagick.org/images/patter=
+ns/rose.png"></p></td>
+</tr>
+<tr><td><p>SMALLFISHSCALES</p></td>
+<td><p>8x8 small fish scales pattern</p></td>
+<td><p><img alt=3D"smallfishscales" src=3D"http://www.graphicsmagick.org/im=
+ages/patterns/smallfishscales.png"></p></td>
+</tr>
+<tr><td><p>VERTICAL</p></td>
+<td><p>8x8 vertical line pattern</p></td>
+<td><p><img alt=3D"vertical" src=3D"http://www.graphicsmagick.org/images/pa=
+tterns/vertical.png"></p></td>
+</tr>
+<tr><td><p>VERTICALBRICKS</p></td>
+<td><p>16x16 vertical brick pattern</p></td>
+<td><p><img alt=3D"verticalbricks" src=3D"http://www.graphicsmagick.org/ima=
+ges/patterns/verticalbricks.png"></p></td>
+</tr>
+<tr><td><p>VERTICALLEFTSHINGLE</p></td>
+<td><p>24x24 vertical left shingle
+pattern</p></td>
+<td><p><img alt=3D"verticalleftshingle" src=3D"http://www.graphicsmagick.or=
+g/images/patterns/verticalleftshingle.png"></p></td>
+</tr>
+<tr><td><p>VERTICALRIGHTSHINGLE</p></td>
+<td><p>24x24 vertical right shingle
+pattern</p></td>
+<td><p><img alt=3D"verticalrightshingle" src=3D"http://www.graphicsmagick.o=
+rg/images/patterns/verticalrightshingle.png"></p></td>
+</tr>
+<tr><td><p>VERTICALSAW</p></td>
+<td><p>8x16 vertical saw-tooth pattern</p></td>
+<td><p><img alt=3D"verticalsaw" src=3D"http://www.graphicsmagick.org/images=
+/patterns/verticalsaw.png"></p></td>
+</tr>
+</tbody>
+</table>
+<p>GraphicsMagick provides a number of format identifiers which are used
+to add, remove, and save embedded profiles for images which can
+support embedded profiles. Image types which may contain embedded
+profiles are <a class=3D"reference external" href=3D"http://www.simplesyste=
+ms.org/libtiff/">TIFF</a>, <a class=3D"reference external" href=3D"http://w=
+ww.jpeg.org/">JPEG</a>, PDF, and PNG.</p>
+<table>
+<caption>Supported Embedded Profile Formats</caption>
+<colgroup>
+<col style=3D"width: 19%">
+<col style=3D"width: 6%">
+<col style=3D"width: 27%">
+<col style=3D"width: 48%">
+</colgroup>
+<tbody>
+<tr><td><p>Format</p></td>
+<td><p>Mode</p></td>
+<td><p>Description</p></td>
+<td><p>Notes</p></td>
+</tr>
+<tr><td><p>8BIM</p></td>
+<td><p>RW</p></td>
+<td><p>Photoshop resource format
+(binary)</p></td>
+<td></td>
+</tr>
+<tr><td><p>8BIMTEXT</p></td>
+<td><p>RW</p></td>
+<td><p>Photoshop resource format
+(ASCII)</p></td>
+<td><p>An ASCII representation of the 8BIM format.</p></td>
+</tr>
+<tr><td><p>APP1</p></td>
+<td><p>RW</p></td>
+<td><p>Raw application
+information</p></td>
+<td></td>
+</tr>
+<tr><td><p>APP1JPEG</p></td>
+<td><p>RW</p></td>
+<td><p>Raw <a class=3D"reference external" href=3D"http://www.jpeg.org/">JP=
+EG</a> binary data</p></td>
+<td><p>Profile in <a class=3D"reference external" href=3D"http://www.jpeg.o=
+rg/">JPEG</a> wrapper.</p></td>
+</tr>
+<tr><td><p>ICC</p></td>
+<td><p>RW</p></td>
+<td><p>International Color
+Consortium color profile</p></td>
+<td><p>Also known as "ICM". To read, use -profile with
+convert.</p></td>
+</tr>
+<tr><td><p>IPTC</p></td>
+<td><p>RW</p></td>
+<td><p>IPTC Newsphoto (binary)</p></td>
+<td><p>To read, use -profile with convert</p></td>
+</tr>
+<tr><td><p>IPTCTEXT</p></td>
+<td><p>RW</p></td>
+<td><p>IPTC Newsphoto (ASCII)</p></td>
+<td><p>An ASCII representation of the IPTC format.</p></td>
+</tr>
+</tbody>
+</table>
+<p>Support for some of the formats are delegated to libraries or external
+programs. The README describes where to find these distributions and
+any special configuration options required.</p>
+<p>To get a complete listing of the image formats which are supported on
+your system, type</p>
+<pre class=3D"literal-block">gm convert -list format</pre>
+<p>On some platforms, GraphicsMagick automatically processes these
+extensions: .gz for Zip compression, .Z for Unix compression, and .bz2
+for block compression. For example, a PNM image called image.pnm.gz is
+automatically uncompressed while the image is read.</p>
+</div>
+
+
+<hr class=3D"docutils">
+<div class=3D"document">
+    <p><a href=3D"http://www.graphicsmagick.org/Copyright.html">Copyright</=
+a> =C2=A9 GraphicsMagick Group 2002 - 2023<!--SPONSOR_LOGO--></p>
+</div>
+
+
+
+
+</body><!--TestCompleteHiddenNodes{{--><input id=3D"_retVal12" style=3D"dis=
+play: none;" istestcompletehiddennode=3D"1"><!--}}TestCompleteHiddenNodes--=
+></html>
+------MultipartBoundary--KA8azSkcpVUf9vwXhabozCwDP5IFrEYWTOrimXxAdu----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://www.graphicsmagick.org/docutils-articles.css
+
+@charset "utf-8";
+
+body, p, td, th, ul, ol { font-size: medium; font-family: sans-serif; }
+
+body { color: rgb(0, 0, 0); text-align: left; margin: 0px; background-color=
+: rgb(255, 255, 255); padding-bottom: 20px; }
+
+h1 { font-size: 120%; }
+
+h2 { font-size: 110%; }
+
+h3, h4 { font-size: 105%; }
+
+a:link { color: rgb(0, 127, 64); text-decoration: underline; }
+
+a:visited { color: rgb(0, 96, 48); text-decoration: underline; }
+
+a:hover { color: rgb(0, 96, 48); }
+
+.small { font-size: smaller; }
+
+.tiny { font-size: smaller; }
+
+div.banner { border-bottom: 1px solid rgb(58, 72, 65); padding: 2ex 0px 1ex=
+ 4%; border-top: 1px solid rgb(58, 72, 65); background: url("images/banner_=
+bg.png") repeat-x rgb(255, 255, 255); overflow: hidden; margin: 0px; }
+
+span.nowrap { white-space: nowrap; margin: 2ex 2% 0px 0px; }
+
+.right { float: right; width: auto; }
+
+div.banner img { vertical-align: middle; margin-left: 0em; }
+
+div.banner form { margin-left: 2em; display: inline; text-align: center; }
+
+div.banner .title { color: rgb(0, 42, 21); font-size: 2.2em; font-weight: b=
+old; }
+
+div.banner .subtitle { color: rgb(0, 42, 21); font-size: 1em; font-weight: =
+normal; margin-left: 1em; }
+
+div.navmenu { font-size: 90%; border-bottom: 1px solid rgb(117, 134, 126); =
+padding: 0px; margin: 0px; background-color: rgb(0, 92, 48); text-align: ce=
+nter; }
+
+div.navmenu ul { max-width: 60em; padding: 5px; margin: 0px; }
+
+div.navmenu ul li { padding: 0px 0.5em; list-style-type: none; margin: 0px =
+0px 0px 4px; display: inline; text-align: center; }
+
+div.navmenu ul li a { color: rgb(255, 255, 255); text-decoration: none; }
+
+div.navmenu ul li a:hover { border-bottom: 1px solid rgb(255, 255, 255); }
+
+div.document { height: auto; padding: 1em 1%; width: auto; background: rgb(=
+255, 255, 255); max-width: 60em; margin: 2ex 3% 1ex; line-height: 140%; tex=
+t-align: left; }
+
+div.document h1.title { font-size: 140%; padding: 0px 0px 0.4ex; font-weigh=
+t: bold; margin: 0px 0px 0.5em; text-align: center; }
+
+div.document hr.end { color: rgb(128, 128, 128); width: 50%; height: 1px; }
+
+hr.divider { color: rgb(160, 160, 160); clear: both; height: 3px; width: 62=
+%; border: none; background-color: rgb(160, 160, 160); }
+
+div.footer { color: rgb(96, 96, 96); clear: both; width: 100%; background: =
+rgb(255, 255, 255); max-width: 60em; padding-top: 1ex; font-family: sans-se=
+rif; }
+
+div.footer p { font-size: 9pt; margin: 0.5ex 0px 0px; text-align: left; }
+
+div.footer a { color: rgb(0, 0, 0); font-size: 9pt; margin: 0px 0.5em; text=
+-decoration: none; }
+
+div.footer a:hover { text-decoration: underline; }
+
+h2 { font-size: 14pt; }
+
+h3 { font-size: 12pt; }
+
+h4 { font-size: 11pt; }
+
+h5, h6 { font-size: 10pt; }
+
+a { text-decoration: none; }
+
+a:hover { text-decoration: underline; }
+
+h1 a:hover { color: inherit; background-color: inherit; }
+
+tt { background-color: rgb(201, 238, 220); }
+
+dl.docutils dd { margin-bottom: 1em; }
+
+dl.docutils dt { padding-top: 0.1cm; font-weight: bold; padding-bottom: 0.1=
+cm; }
+
+dl.docutils dt tt { font-style: normal; }
+
+dl.docutils dt tt span { background-color: rgb(255, 255, 255); }
+
+dl.docutils dt span { padding-top: 0.2ex; padding-bottom: 0.2ex; }
+
+hr { width: 75%; break-after: page; }
+
+li { padding-top: 0.5ex; padding-bottom: 0.5ex; }
+
+div.document h1.title { font-weight: bold; font-size: 1.5em; text-align: ce=
+nter; margin-top: 1ex; padding-bottom: 1ex; }
+
+div.section h1 { color: black; margin-top: 3.5ex; font-weight: bold; font-s=
+ize: 120%; margin-bottom: 0.5ex; }
+
+div.section h1 a { color: rgb(34, 68, 51); font-size: inherit; text-decorat=
+ion: none; }
+
+div.section h1 a.toc-backref { color: rgb(16, 64, 40); }
+
+h2.subtitle { padding-top: 0cm; font-size: 1.1em; text-align: center; }
+
+div.section h2 { color: black; font-size: 110%; margin-top: 2ex; margin-bot=
+tom: 1ex; }
+
+div.section h2 a { color: rgb(66, 100, 83); font-size: inherit; background-=
+color: rgb(255, 255, 255); text-decoration: none; }
+
+div.section h3 { color: rgb(34, 68, 51); font-size: inherit; }
+
+div.section h3 a { color: rgb(96, 128, 112); font-size: inherit; background=
+-color: rgb(255, 255, 255); text-decoration: none; }
+
+a.toc-backref { color: black; text-decoration: none; }
+
+div.abstract { margin: 2em 5em; }
+
+div.abstract p.topic-title { font-weight: bold; text-align: center; }
+
+div.admonition, div.attention, div.caution, div.danger, div.error, div.hint=
+, div.important, div.note, div.tip, div.warning { padding: 1em; margin: 2em=
+; border: medium outset; }
+
+div.hint, div.note, div.tip { margin: 1em; padding: 0.5ex 0.5em; border: 1p=
+t solid rgb(204, 204, 204); background-color: rgb(191, 213, 202); }
+
+div.attention p.admonition-title, div.caution p.admonition-title, div.dange=
+r p.admonition-title, div.error p.admonition-title, div.warning p.admonitio=
+n-title div.hint p.admonition-title, div.important p.admonition-title, div.=
+note p.admonition-title, div.tip p.admonition-title { color: red; font-size=
+: 12pt; font-weight: bold; font-family: sans-serif; }
+
+div.hint p.admonition-title, div.important p.admonition-title, div.note p.a=
+dmonition-title, div.tip p.admonition-title { color: rgb(112, 173, 142); fo=
+nt-size: 11pt; font-weight: bold; font-family: sans-serif; }
+
+div.dedication { margin: 2em 5em; font-style: italic; text-align: center; }
+
+div.contents p.topic-title { color: black; font-size: 16pt; font-weight: bo=
+ld; font-style: normal; }
+
+div.dedication p.topic-title { font-weight: bold; font-style: normal; }
+
+div.figure { margin-left: 2em; }
+
+div.footer, div.header { font-size: smaller; margin-bottom: 0.5ex; }
+
+div.system-messages { margin: 5em; }
+
+div.system-messages h1 { color: red; font-size: 1em; }
+
+div.system-message { padding: 1em; border: medium outset; }
+
+div.system-message p.system-message-title { color: red; font-weight: bold; =
+}
+
+div.topic { margin: 2em; }
+
+div.line-block { margin-top: 1ex; border-left: 2pt solid rgb(96, 96, 96); p=
+adding-left: 0.5em; background-color: rgb(255, 255, 255); margin-bottom: 1e=
+x; }
+
+ul.simple { padding-left: 0px; margin-left: 1em; margin-bottom: 1em; }
+
+ul.simple li p:first-child { margin-top: 0px; margin-bottom: 0px; }
+
+ol.simple { margin-left: 1em; margin-bottom: 1em; }
+
+ol.simple li p:first-child { margin-top: 0px; margin-bottom: 0px; }
+
+ol.arabic { list-style: decimal; }
+
+ol.loweralpha { list-style: lower-alpha; }
+
+ol.upperalpha { list-style: upper-alpha; }
+
+ol.lowerroman { list-style: lower-roman; }
+
+ol.upperroman { list-style: upper-roman; }
+
+p.caption { font-style: italic; }
+
+p.credits { font-size: smaller; font-style: italic; }
+
+p.label { white-space: nowrap; }
+
+p.topic-title { font-weight: bold; }
+
+pre.address { font-size: 10pt; font-family: serif; margin-top: 0px; margin-=
+bottom: 0px; }
+
+pre.line-block { font-size: 10pt; font-family: serif; }
+
+pre.literal-block, pre.doctest-block { font-size: 10pt; color: rgb(0, 0, 0)=
+; border-width: 1px; padding: 2pt; border-color: rgb(224, 224, 224); border=
+-style: solid; line-height: 13pt; background-color: rgb(232, 248, 240); ove=
+rflow: auto; }
+
+span.classifier { font-style: oblique; }
+
+span.classifier-delimiter { font-weight: bold; }
+
+span.interpreted { font-family: arial, helvetica, sans-serif; }
+
+span.option-argument { font-style: italic; }
+
+span.pre { white-space: pre; }
+
+span.problematic { color: red; }
+
+span.field-argument { font-size: 10pt; }
+
+div.document table { font-size: 100%; margin-bottom: 1ex; width: 98%; margi=
+n-top: 1ex; border: none; background-color: rgb(255, 255, 255); }
+
+div.document table caption { font-weight: bold; }
+
+div.document table th, div.document table td { padding: 6px; border: 1px so=
+lid rgb(200, 200, 200); vertical-align: top; }
+
+div.document table th { border-top: 1px solid black; background-color: rgb(=
+128, 198, 163); border-bottom: 1px solid black; vertical-align: bottom; }
+
+div.document table td { background-color: rgb(248, 248, 248); vertical-alig=
+n: top; }
+
+div.document table td.decimal { background-color: rgb(248, 248, 248); text-=
+align: right; }
+
+table.citation { border-left: thin solid gray; padding-left: 0.5ex; }
+
+table.docinfo { font-size: 90%; border-right: none; border-top: 1pt solid r=
+gb(221, 221, 221); border-bottom: 1pt solid rgb(221, 221, 221); margin-top:=
+ 1em; margin-left: 0em; border-left: none; margin-bottom: 2em; background-c=
+olor: rgb(238, 238, 238); }
+
+table.docinfo th, table.docinfo td { border: none; background-color: rgb(23=
+8, 238, 238); padding-left: 0.5em; }
+
+table.footnote { text-align: left; font-size: smaller; border-left: thin so=
+lid black; padding-left: 0.5ex; }
+
+table.footnote td { background-color: rgb(240, 240, 240); }
+
+th.docinfo-name, th.field-name { white-space: nowrap; font-weight: bold; ba=
+ckground-color: rgb(238, 238, 238); text-align: left; }
+
+table.option-list { border: none; padding: 0px; background-color: rgb(255, =
+255, 255); border-collapse: collapse; }
+
+table.option-list tr { border: none; margin: 0px; padding: 0px; }
+
+table.option-list td { border: none; background-color: rgb(255, 255, 255); =
+}
+
+table.option-list td.option-group { background-color: rgb(255, 255, 255); }
+
+span.option { font-weight: bold; background-color: rgb(232, 248, 240); }
+
+kbd { font-family: monospace; }
+
+h1 tt, h2 tt, h3 tt, h4 tt, h5 tt, h6 tt { font-size: inherit; background-c=
+olor: inherit; }
+
+ul.auto-toc { list-style-type: none; }
+
+img.align-left { }
+
+img.align-right { }
+
+p:first-child { margin-top: 0px; }
+
+p:last-child { margin-bottom: 0px; }
+
+@media handheld {
+  div.banner { display: none; }
+}
+------MultipartBoundary--KA8azSkcpVUf9vwXhabozCwDP5IFrEYWTOrimXxAdu----
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: http://www.graphicsmagick.org/images/banner_bg.png
+
+iVBORw0KGgoAAAANSUhEUgAAAAgAAACACAIAAAC5jr9pAAAAlklEQVRIx+1VQQ6AMAijwPf9jb/x
+MfgBt6SkWzRxVwKllDIc12lPz23w0g2ijAQGgQCLAWzoSsZ8xiPIrlAmmi6PMWHuTmYErQfYZdii
+h9f6rhqbSOvhr3RUQ48d0+UdhfW3hHcUrzkGsXTdpdZJO5kVUmTnBg/oMF75czb00GE0DrKUR6hK
+TWxgqzUXlkJVicD/wNcDN7MVDYAuHcqrAAAAAElFTkSuQmCC
+
+------MultipartBoundary--KA8azSkcpVUf9vwXhabozCwDP5IFrEYWTOrimXxAdu----
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: http://www.graphicsmagick.org/images/gm-107x76.png
+
+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
+rkJggg==
+
+------MultipartBoundary--KA8azSkcpVUf9vwXhabozCwDP5IFrEYWTOrimXxAdu----
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: http://www.graphicsmagick.org/images/patterns/bricks.png
+
+iVBORw0KGgoAAAANSUhEUgAAAGQAAAAaCAIAAADOqG6yAAAAZUlEQVR42u3YMQqAMBAAQeP//xw/
+YOEWwYgz9aVZODgy5pzHY2OMP8+fz18iViBWIFYgViAWa9zfHZvfO2/NW8NArECsQKxArEAs1tji
+fvnKvDUMxArECsQKxArEYg3/WWHeGgYXgnJUH5A7KYUAAAAASUVORK5CYII=
+
+------MultipartBoundary--KA8azSkcpVUf9vwXhabozCwDP5IFrEYWTOrimXxAdu----
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: http://www.graphicsmagick.org/images/patterns/checkerboard.png
+
+iVBORw0KGgoAAAANSUhEUgAAAGQAAAAaCAIAAADOqG6yAAAAaElEQVR42u3YsQ3AIBAEQWy5I6ql
+KHpyC0yKdmJ0wYron7XWOLb3Pn8857xs+T0fSrFAsUCxQLFAsUCxQLFAsUCxQLFAsUCxQLFAscBH
+554ht6T7lvtZoFigWKBYoFigWKBYoFigWOAHKbEWaEYeQBwAAAAASUVORK5CYII=
+
+------MultipartBoundary--KA8azSkcpVUf9vwXhabozCwDP5IFrEYWTOrimXxAdu----
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: http://www.graphicsmagick.org/images/patterns/circles.png
+
+iVBORw0KGgoAAAANSUhEUgAAAGQAAAAaCAIAAADOqG6yAAAApUlEQVR42u2YQQ6AIAwEKfH/X8YD
+CUEEZQ8kaGdORqceFoylllIKFWYWbjSOW/9oyrpe95FD3/KtcvFA7fj042RlTjpH7taPrzVQGH63
+w4K5Zfmlz84SICwBwhIgLAHCEiAsgVharxnyf9Stz84SiKHq658p7Zlb/3JWDJud8nfzrfuKhq/M
+m1b7zLOYZ63xmWcJPq2DAPMswWdnCRCWAGEJEJbACTsGoUfstrUvAAAAAElFTkSuQmCC
+
+------MultipartBoundary--KA8azSkcpVUf9vwXhabozCwDP5IFrEYWTOrimXxAdu----
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: http://www.graphicsmagick.org/images/patterns/crosshatch.png
+
+iVBORw0KGgoAAAANSUhEUgAAAGQAAAAaCAIAAADOqG6yAAAAZElEQVR42u3UMQ7AMAxC0aT3v7Oz
+ZG8ZUEH6b2LGMmvhsz0zN23yS37+vlYTyoJHxBa0ZN5QQFnwiNiClswbCigLHhFb0JJ5QwFlwSNi
+C1oybyigLHhEbEFL5g0FlAWPiC1oyQcD7w0+xc5A6wAAAABJRU5ErkJggg==
+
+------MultipartBoundary--KA8azSkcpVUf9vwXhabozCwDP5IFrEYWTOrimXxAdu----
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: http://www.graphicsmagick.org/images/patterns/crosshatch30.png
+
+iVBORw0KGgoAAAANSUhEUgAAAGQAAAAaCAIAAADOqG6yAAAAb0lEQVR42u2UMQoAMQzD4v8/2rcV
+CuXW2KBMilaDNDO25z5J+Ic/ZBv+Z50nZb1kn7BYC+etl+wTFmthmkWzaNa+T1ishWkWzaJZ+z5h
+sRamWTSLZu37hMVamGbRLJq17xMWa2GaRbNo1r5PWKyFP5sukeJwUxKoAAAAAElFTkSuQmCC
+
+------MultipartBoundary--KA8azSkcpVUf9vwXhabozCwDP5IFrEYWTOrimXxAdu----
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: http://www.graphicsmagick.org/images/patterns/crosshatch45.png
+
+iVBORw0KGgoAAAANSUhEUgAAAGQAAAAaCAIAAADOqG6yAAAAiElEQVR42u2WMQ7AIAwDbf7/53Ro
+FVWAqjIlwzFZR6YIrLOkiJAkyTb5I4+IsD3Re4PwiT8X00Qe+JuPTPf+1gl4covO+p+nV5dbhK98
+80V79kUHPrYTDfuiA6ez8Cw8q5zjWQeczsKz8KxyjmfhWXhWOcezDjiedcDpLDwLzyrneBaehWeV
+8wsI3O8tH9u4WQAAAABJRU5ErkJggg==
+
+------MultipartBoundary--KA8azSkcpVUf9vwXhabozCwDP5IFrEYWTOrimXxAdu----
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: http://www.graphicsmagick.org/images/patterns/fishscales.png
+
+iVBORw0KGgoAAAANSUhEUgAAAGQAAAAaCAIAAADOqG6yAAAApklEQVR42u3W0QqAIAyF4c33f+fT
+hSAaotuFONnpKvKroGT8CkDGQ1XrxXayPvL4YVlVRWR95feaXB5AFduHNpDWrz6k5Vek8qXfWds7
+AWT22u+0Z2bHJT8Z8BJ+dlzz04Xgs+OWL9M7g8+OW56dxc4640PMglc8O8vh2VkOz87yeHaW3bOz
+2FmHPDvL7kPMglc8O8vh2VkOz87yeHaW3bOz2Fln/Ac2LoEkM7XF9QAAAABJRU5ErkJggg==
+
+------MultipartBoundary--KA8azSkcpVUf9vwXhabozCwDP5IFrEYWTOrimXxAdu----
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: http://www.graphicsmagick.org/images/patterns/granite.png
+
+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
+
+------MultipartBoundary--KA8azSkcpVUf9vwXhabozCwDP5IFrEYWTOrimXxAdu----
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: http://www.graphicsmagick.org/images/patterns/gray0.png
+
+iVBORw0KGgoAAAANSUhEUgAAAGQAAAAgCAIAAABrSUp5AAAAIElEQVR42u3BMQEAAADCoPVPbQo/
+oAAAAAAAAAAAAHgYJaAAAZxKKm4AAAAASUVORK5CYII=
+
+------MultipartBoundary--KA8azSkcpVUf9vwXhabozCwDP5IFrEYWTOrimXxAdu----
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: http://www.graphicsmagick.org/images/patterns/gray5.png
+
+iVBORw0KGgoAAAANSUhEUgAAAGQAAAAgCAIAAABrSUp5AAAAUElEQVR42u3WwQkAMRACwPTf9KaC
+O/LThZmX+Bc8B+gwM/JjBvK+Nqn/74GMhv+yJQN5bf9lSw9kNPyXLRnIa/svW3ogo+G/bMlAXtt/
+6ewviNjGSCbTm1YAAAAASUVORK5CYII=
+
+------MultipartBoundary--KA8azSkcpVUf9vwXhabozCwDP5IFrEYWTOrimXxAdu----
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: http://www.graphicsmagick.org/images/patterns/gray10.png
+
+iVBORw0KGgoAAAANSUhEUgAAAGQAAAAgCAIAAABrSUp5AAAAfElEQVR42u3YMQ4AIQwDQf7/ae4F
+OSVKsxY7lWVRUViIc9R37zU3s+aq+7P/71UjbEFK1s70jl87rx7CFqRkzdHeLym9aoQtSMnaoe0C
+rVcPYQtSsuZou5DSq0bYgpSsHdr/Ee28eghbkJI1R3u/pPSqEbYgJWuHtguc/gPoh6SGgy0gQwAA
+AABJRU5ErkJggg==
+
+------MultipartBoundary--KA8azSkcpVUf9vwXhabozCwDP5IFrEYWTOrimXxAdu----
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: http://www.graphicsmagick.org/images/patterns/gray15.png
+
+iVBORw0KGgoAAAANSUhEUgAAAGQAAAAgCAIAAABrSUp5AAAAhElEQVR42u3YsQqAMBRD0f7/Tz8n
+QRCkQcEk3DNIKMXBIQTXzKwT+TlDd/+W1+eb8773Y49DF6Rk6L7thdb7UDh0QUqGrmkHsbM8OHRB
+SoYua+/8ex97HLogJUPXtIPYWR4cuiAlQ+ewX/zvQ+HQBSkZuqYdxM7y4NAFKRm6rL3D/6wAB9nz
+XujTVfZqAAAAAElFTkSuQmCC
+
+------MultipartBoundary--KA8azSkcpVUf9vwXhabozCwDP5IFrEYWTOrimXxAdu----
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: http://www.graphicsmagick.org/images/patterns/gray20.png
+
+iVBORw0KGgoAAAANSUhEUgAAAGQAAAAgCAIAAABrSUp5AAAAfUlEQVR42u3WMQrAMAxDUd//0ula
+CBT/TaL/DcKETIEIz8ycc8xlini/mfP3LCKhC1pSxP0/77f8nv9zX0RCF7SkiIT9pWUWkdAFLSli
+v3d4LiKhC1pSRML+0jKLSOiClhSx3zu8LyKhC1pSRML+0jKLSOiClhSx3zs819YD2+5s9jVeBQwA
+AAAASUVORK5CYII=
+
+------MultipartBoundary--KA8azSkcpVUf9vwXhabozCwDP5IFrEYWTOrimXxAdu----
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: http://www.graphicsmagick.org/images/patterns/gray25.png
+
+iVBORw0KGgoAAAANSUhEUgAAAGQAAAAgCAIAAABrSUp5AAAAZUlEQVR42u3RMQ0AMACEwPo33Vro
+b5BwAwY4J//uvfWzWRCOWZoF4ZilWRCOWZoF4ZilWRCOWZoF4ZilWRCOWZoF4ZilWRCOWZoF4Zil
+WRCOWZoF4ZilWRCOWZoF4ZilWRCOWfoAVrhXKJFAop0AAAAASUVORK5CYII=
+
+------MultipartBoundary--KA8azSkcpVUf9vwXhabozCwDP5IFrEYWTOrimXxAdu----
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: http://www.graphicsmagick.org/images/patterns/gray30.png
+
+iVBORw0KGgoAAAANSUhEUgAAAGQAAAAgCAIAAABrSUp5AAAAjUlEQVR42u2WQQoAIQwD/f+nu/cq
+0sJSEpwchiA9JRBcC9UVEbDInBr+5hUacyHqSKExF+bUdl+5eeVeoTEXoo4UGnNhTg3PP4vNmpdC
+Yy68Jcj7edchm/W3FBpzYU4Nzz+LzZqXQmMuzKntvnLzyr1CYy5EHSk05sKcGp5/Fps1L4XGXHhL
+kPfzrsMKP04+O2AwJKB3AAAAAElFTkSuQmCC
+
+------MultipartBoundary--KA8azSkcpVUf9vwXhabozCwDP5IFrEYWTOrimXxAdu----
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: http://www.graphicsmagick.org/images/patterns/gray35.png
+
+iVBORw0KGgoAAAANSUhEUgAAAGQAAAAgCAIAAABrSUp5AAAAoElEQVR42u2UMQ7AMAwC/f9Pp6Pd
+KLWyGdTzcCK0E0hERKy14CXjpdC9VmjMgzW/evhnf74xH+75oTut0JgHv7Ksd5P9H/7PN2Sz2CyF
+zaqHf/bnG/Phnh+60wqNuTBPZRdU/fwG2Sw2a4pqu6Duzzfmwz0/dKcVGvPgV5b1brL/w//5hmwW
+m6WwWfXwz/58Yz7c80N3WqExF+ap7IKq/wB9HwG2gu6iGwAAAABJRU5ErkJggg==
+
+------MultipartBoundary--KA8azSkcpVUf9vwXhabozCwDP5IFrEYWTOrimXxAdu----
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: http://www.graphicsmagick.org/images/patterns/gray40.png
+
+iVBORw0KGgoAAAANSUhEUgAAAGQAAAAgCAIAAABrSUp5AAAArElEQVR42u2UMQoAIRAD8/9Pe8Vx
+KMpyFhYTzBZDDFsZNtI3rbXoH/2+wx2qdOOvPiExF2r6v+h01unO2tHVPd+yT0jMhX0ovUDWhMRc
+qNKNv/qExFyo6f+i01mnO2vU1d3evk9IzIV9KL1A1oTEXKjSjb/6hMRcqOn/otNZpztrR1f3fMs+
+ITEX9qH0AlkTEnOhSjf+6hMSc6Gm/4tOZ53urFFXd3v7PiExFz7pDOXfp2ynZQAAAABJRU5ErkJg
+gg==
+
+------MultipartBoundary--KA8azSkcpVUf9vwXhabozCwDP5IFrEYWTOrimXxAdu----
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: http://www.graphicsmagick.org/images/patterns/gray45.png
+
+iVBORw0KGgoAAAANSUhEUgAAAGQAAAAgCAIAAABrSUp5AAAAkUlEQVR42u2UsQrAIBBD8/8/bYfS
+QUVph5ILPodHCDccF4wktdb0PPRO3wq+Iff6Qv8GOdTSxZ/9ComlUPYNkujfIIfqFHqvKySWQu5F
+Z7k6a5w+eb5CYinkXnSWq7PQ/EE6i86qQy1d/NmvkFgKZd8gif4NcqhOofe6QmIp5F50lquzxumT
+5ysklkLuRWf9wwv9wMoXBDsVeQAAAABJRU5ErkJggg==
+
+------MultipartBoundary--KA8azSkcpVUf9vwXhabozCwDP5IFrEYWTOrimXxAdu----
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: http://www.graphicsmagick.org/images/patterns/gray50.png
+
+iVBORw0KGgoAAAANSUhEUgAAAGQAAAAgCAIAAABrSUp5AAAAZElEQVR42u3SoQ0AQRDEsO2/6fsW
+nkUjmQQH+O7uvae/2h/s9PKDpfYHOyWLLLL69gc7JYsssvr2Bzsliyyy+vYHOyWLLLL69gc7JYss
+svr2Bzsliyyy+vYHOyWLLLL69gc7/QABMK5PywrOOAAAAABJRU5ErkJggg==
+
+------MultipartBoundary--KA8azSkcpVUf9vwXhabozCwDP5IFrEYWTOrimXxAdu----
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: http://www.graphicsmagick.org/images/patterns/gray55.png
+
+iVBORw0KGgoAAAANSUhEUgAAAGQAAAAgCAIAAABrSUp5AAAAkUlEQVR42u2YMQrAMAzEnP8/+rqU
+0sGFdCjnK1oU42QwOBEmJamq4A7LXkES/RXksCS1e+Sb/ISOpRBn4axvuM5lreumET/GEzqWQpyF
+s4zOunPnbf/2/ISOpRBn4Syjs4hxFs7CWUNYkto98k1+QsdSiLNw1jdkzmLOwll++ivIIf9Z/Gfh
+LD/9FeSQOetFfABgfnNqpbTxaAAAAABJRU5ErkJggg==
+
+------MultipartBoundary--KA8azSkcpVUf9vwXhabozCwDP5IFrEYWTOrimXxAdu----
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: http://www.graphicsmagick.org/images/patterns/gray60.png
+
+iVBORw0KGgoAAAANSUhEUgAAAGQAAAAgCAIAAABrSUp5AAAAnElEQVR42u2YMQrAQAgE1/8/2hQ2
+4ZAkVioZi8EsVnFZ5MzdJUkyM/rnXpLiG77S3P37P77zn/P9G9vCEVmwpcdZFaZqFPqh4ywyi8xq
+Z353zL93uub7N7aFI7JgS4+zKkzVKPRDx1lkFpnVzin3y5b5/o1t4Ygs2NLjrApTNQr90HEWmUVm
+tZP3LN6zyKz2HmdVmKpR6IeOswq8AJLoFKlk7ls3AAAAAElFTkSuQmCC
+
+------MultipartBoundary--KA8azSkcpVUf9vwXhabozCwDP5IFrEYWTOrimXxAdu----
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: http://www.graphicsmagick.org/images/patterns/gray65.png
+
+iVBORw0KGgoAAAANSUhEUgAAAGQAAAAgCAIAAABrSUp5AAAAoUlEQVR42u2YOwrAMAxD7fsf2h26
+pEP6GYwl+jIIITJZ7iM0qyozqyoiIgJ/7+N06KMuM1vOZZbk6xlvzEUTZsGsZma9muvme/7JfTYL
+ZrX5+cZcVOb94pKPN+aiMAtmdTNLiAuqOZsFs9r8fGMuKscF9Xy8MReFWTCrm1mC/4/U7rNZMKvN
+zzfmojLvF5d8vDEXhVkwq5tZQlxQzdmsD3oAnrAjUENDuNQAAAAASUVORK5CYII=
+
+------MultipartBoundary--KA8azSkcpVUf9vwXhabozCwDP5IFrEYWTOrimXxAdu----
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: http://www.graphicsmagick.org/images/patterns/gray70.png
+
+iVBORw0KGgoAAAANSUhEUgAAAGQAAAAgCAIAAABrSUp5AAAAmklEQVR42u2YMQrAMAwDnf8/Oh06
+NEMg7uDKKqdBCJNNsjCJiJhzwhketwJZyB1z4SdZY6APmmTRWXWQO+bC+2Stu8qcZNFZH0DumAu3
+uF9cNMmis+ogd8yFz7u6IrPbP35PsuisOsgdc+EW94uLJll0Vh3kjrlwm38il7ncMRems15C7pgL
+t7hfXDTJorPqIHfMhVv/H3V7fwEvdVs4CRjxrAAAAABJRU5ErkJggg==
+
+------MultipartBoundary--KA8azSkcpVUf9vwXhabozCwDP5IFrEYWTOrimXxAdu----
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: http://www.graphicsmagick.org/images/patterns/gray75.png
+
+iVBORw0KGgoAAAANSUhEUgAAAGQAAAAgCAIAAABrSUp5AAAAfUlEQVR42u2SsQ3AMACD0v+PToc+
+UCYLCQbkHZ9zzr03//HzrfjLvJjFPQsyL2Zxz4LMi1ncsyDzYhb3LMi8mMU9CzIvZnHPgsyLWdyz
+IPNiFvcsyLyYxT0LMi9mcc+CzItZ3LMg82IW9yzIvJjFPQsyL2Zxz4LMi1ncswAvSzSHCHSunvsA
+AAAASUVORK5CYII=
+
+------MultipartBoundary--KA8azSkcpVUf9vwXhabozCwDP5IFrEYWTOrimXxAdu----
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: http://www.graphicsmagick.org/images/patterns/gray80.png
+
+iVBORw0KGgoAAAANSUhEUgAAAGQAAAAgCAIAAABrSUp5AAAAlUlEQVR42u2YMQoAIQwEjf//s1cI
+lpLhmgRniiWI1TG3BGOtNSTJ/lhmJkOz8swxRkSc3NznZ+9rFqFCF3RJzQLMM+X/4WdnzSJU6IIu
+qVmA257luXvWDyp0QZfULIB7Fpg1i1ChC7qkZgF8zwL3NYtQoQu6pGYB3LPArFmECl3QJTUL4HsW
+ONcsQoUu6JKaBXDPAvMHPbDeTYH2MFMAAAAASUVORK5CYII=
+
+------MultipartBoundary--KA8azSkcpVUf9vwXhabozCwDP5IFrEYWTOrimXxAdu----
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: http://www.graphicsmagick.org/images/patterns/gray85.png
+
+iVBORw0KGgoAAAANSUhEUgAAAGQAAAAgCAIAAABrSUp5AAAAjElEQVR42u3YsQqAMAxFUdv//+c6
+CKKD8jJk6rmDxtBJXi8hY611IGOOMe6P//r53PS8ZOXM65X/751rySow/++z/qsvWTmcxVk9zPze
+ftUbnZesHM7irB7MWZW+ZOVwFmf1YJ9VOS9ZOZzFWT2Ysyp9ycrhLM7qwT7LPqsHzuKsHsxZlb5k
+5XBWoT4BQ4c1lafFKxQAAAAASUVORK5CYII=
+
+------MultipartBoundary--KA8azSkcpVUf9vwXhabozCwDP5IFrEYWTOrimXxAdu----
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: http://www.graphicsmagick.org/images/patterns/gray90.png
+
+iVBORw0KGgoAAAANSUhEUgAAAGQAAAAgCAIAAABrSUp5AAAAj0lEQVR42u2YuwrAIBAEs/7/P5si
+D45gYLe4ypkmuljJZjjUnPN4kFS35N98mcKScX0kvRHrvzXNChj1/irOfe92nmYF4Cyc1cOoG+d/
+3jqnWT44C2f1YM1Z5PeaZvngLJzVA3NWktMsH5yFs3rgPSs4T7MCcBbO6oE5K8lplg/Owlk98J4V
+5DQrAGfhrB5OBIxagR0R96wAAAAASUVORK5CYII=
+
+------MultipartBoundary--KA8azSkcpVUf9vwXhabozCwDP5IFrEYWTOrimXxAdu----
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: http://www.graphicsmagick.org/images/patterns/gray95.png
+
+iVBORw0KGgoAAAANSUhEUgAAAGQAAAAgCAIAAABrSUp5AAAAgElEQVR42u3WMQqEQBBE0e29/53H
+TA1E/JEI70XNRENBFz1rrR/P/N/+wJcIKzjCmhnz/Tw66zlrGAgruO6sM+/7u84KrGEgrMCdFWad
+FVjDQFiBOyu866zAGgbCCtxZYdZZgTUMhBW4s8K7zgqsYSCswJ0VZp0VWMNAWIE7K7xv4sMZ6cXj
+cOgAAAAASUVORK5CYII=
+
+------MultipartBoundary--KA8azSkcpVUf9vwXhabozCwDP5IFrEYWTOrimXxAdu----
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: http://www.graphicsmagick.org/images/patterns/gray100.png
+
+iVBORw0KGgoAAAANSUhEUgAAAGQAAAAgCAIAAABrSUp5AAAAYElEQVR42u3QwQ3AIBDAsNL9dz5W
+IC+EZE8QZc3Mx5n/dsBLzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswK
+zArMCswKzArMCswKzArMCswKNkmhAz15nzFaAAAAAElFTkSuQmCC
+
+------MultipartBoundary--KA8azSkcpVUf9vwXhabozCwDP5IFrEYWTOrimXxAdu----
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: http://www.graphicsmagick.org/images/patterns/hexagons.png
+
+iVBORw0KGgoAAAANSUhEUgAAAGQAAAAaCAIAAADOqG6yAAAAq0lEQVR42u2YQQqAMAwEN8X/fzle
+iuhB7PSU1t2TYDpCsrEhkZmSJEXE9fymkZi5U0uQG6X8WT1Zg+nPzIhAH9iJbGcBNcGuRoXajGxn
+AYWk+tdQEbKdBTRTon7y6y+wH9ltCGLchkBtiWmwCNnOAmpaYRosQrazgHqyBgs1cQ3tRLazgB5Z
+LzsNFiEf93dlp8EiZLchkDelgGxnAXlTCsh2FpBXNCDGzgI6Ads2FzHgnJJvAAAAAElFTkSuQmCC
+
+------MultipartBoundary--KA8azSkcpVUf9vwXhabozCwDP5IFrEYWTOrimXxAdu----
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: http://www.graphicsmagick.org/images/patterns/horizontal.png
+
+iVBORw0KGgoAAAANSUhEUgAAAGQAAAAaCAIAAADOqG6yAAAAVUlEQVR42u3UwQkAMRACwFz673mv
+hfiQEJipQARdi2PfzNzO8Ix9O8BLlEWHzwqYYUBZdPisgBkGlEWHzwqYYUBZdPisgBkGlEWHzwqY
+YUBZdPiswA+rgRULaloPigAAAABJRU5ErkJggg==
+
+------MultipartBoundary--KA8azSkcpVUf9vwXhabozCwDP5IFrEYWTOrimXxAdu----
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: http://www.graphicsmagick.org/images/patterns/horizontalsaw.png
+
+iVBORw0KGgoAAAANSUhEUgAAAGQAAAAaCAIAAADOqG6yAAAAgUlEQVR42u2WMQrAMAzE7Pz/z+5Q
+cIrjQm8yBWkKSgrlJnlEGHxjTf/An2AsgT2Wu7cv8OlXniLifId/+pUnMyvv8MX7fdeuiy/e23Q4
+v8S/jgUtpIMAYwnQWYKnswRPZ9FZdNa4p7MESAcBxhKgswRPZwmezqKz6KxxT2cJkA4CFxCfuQzG
+E+DPAAAAAElFTkSuQmCC
+
+------MultipartBoundary--KA8azSkcpVUf9vwXhabozCwDP5IFrEYWTOrimXxAdu----
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: http://www.graphicsmagick.org/images/patterns/hs_bdiagonal.png
+
+iVBORw0KGgoAAAANSUhEUgAAAGQAAAAaCAIAAADOqG6yAAAAeklEQVR42u3WsQ0AMAgDQWD/nckA
+qSyBCNFTXoFcvmemXefu+O0xvmCRR/nHjz3KP37sUf7xY4/xBYs8xhcscjezN5c96PMLFjmdRWf1
+OJ1FZ/U4nSU4nSU4nSX4/IJFTmfRWT1OZ9FZPU5nCU5nCU5nCT6/YJHTWYIfNabPTygtJ68AAAAA
+SUVORK5CYII=
+
+------MultipartBoundary--KA8azSkcpVUf9vwXhabozCwDP5IFrEYWTOrimXxAdu----
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: http://www.graphicsmagick.org/images/patterns/hs_cross.png
+
+iVBORw0KGgoAAAANSUhEUgAAAGQAAAAaCAIAAADOqG6yAAAAYklEQVR42u3WIQ7EQAwEQfv+/+cN
+iw6mwbIqFA1sydHuOWdmZmZ33+9/9nf/DZ+JxR3rn/V9d4aBWIFYgViBWIFY3OGdFXZnGIgViBWI
+FYgViMUd3llhd4aBWIFYgViBWMEDOAecKyuaxMoAAAAASUVORK5CYII=
+
+------MultipartBoundary--KA8azSkcpVUf9vwXhabozCwDP5IFrEYWTOrimXxAdu----
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: http://www.graphicsmagick.org/images/patterns/hs_diagcross.png
+
+iVBORw0KGgoAAAANSUhEUgAAAGQAAAAaCAIAAADOqG6yAAAAiElEQVR42u2WuwrAMAzEbP//P1+H
+lL6y1IPhBt2UikyhCGVESIr3MhO+85K00POGJPjOa73c9b1urDP8w29k8qs78wr2e+dj+XjBmVeY
+ecGZ23nBmeOsxugsOmuG01l01szoLDprhtt5wZnjrMboLDprhtNZdNbM6Cw6a4bbecGZ46zG6KwG
+PwC5peBeOa85hgAAAABJRU5ErkJggg==
+
+------MultipartBoundary--KA8azSkcpVUf9vwXhabozCwDP5IFrEYWTOrimXxAdu----
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: http://www.graphicsmagick.org/images/patterns/hs_fdiagonal.png
+
+iVBORw0KGgoAAAANSUhEUgAAAGQAAAAaCAIAAADOqG6yAAAAhElEQVR42u3WOw7AIAwEUa/vf2en
+zIcmW1g40dDxQIjCxSgiqiqWJQl/eFaVpPUSvnoO+ccn/JyxCXM+3G8HA/83yvO62T7nwz2b3v2l
+Z9O7v3QFnfXa6SzD6SzD6SzD6Sw6q8fpLDqLztrudJbhdJbhdJbhdBad1eN0Fp1FZ213OsvwAwln
+20Nj+sMDAAAAAElFTkSuQmCC
+
+------MultipartBoundary--KA8azSkcpVUf9vwXhabozCwDP5IFrEYWTOrimXxAdu----
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: http://www.graphicsmagick.org/images/patterns/hs_horizontal.png
+
+iVBORw0KGgoAAAANSUhEUgAAAGQAAAAaCAIAAADOqG6yAAAAWElEQVR42u3W0QnAIBAFwZj+ezYt
+uB+HBGYqkIUnt/beD2fe2w/4E7GYsfxZ58wwECsQKxArECsQixnurMAMA7ECsQKxArECsZjhzgrM
+MBArECsQKxAr+ACAjQwf0cp9owAAAABJRU5ErkJggg==
+
+------MultipartBoundary--KA8azSkcpVUf9vwXhabozCwDP5IFrEYWTOrimXxAdu----
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: http://www.graphicsmagick.org/images/patterns/hs_vertical.png
+
+iVBORw0KGgoAAAANSUhEUgAAAGQAAAAaCAIAAADOqG6yAAAAW0lEQVR42u3QIRLAQAwDsaT///OV
+3RR2uYQ8hrvnnJmZmd29+8t//2f4TaxArECsQKxArECsQKxArECsQKxArECsQKxArECsQKxArECs
+QKxArECsQKxArECs4AUrMCc0QYJhlAAAAABJRU5ErkJggg==
+
+------MultipartBoundary--KA8azSkcpVUf9vwXhabozCwDP5IFrEYWTOrimXxAdu----
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: http://www.graphicsmagick.org/images/patterns/left30.png
+
+iVBORw0KGgoAAAANSUhEUgAAAGQAAAAaCAIAAADOqG6yAAAAbklEQVR42u3UIRLAMAwDQen/j3ZB
+A9IyIQtciGcuRGgtSdLM6Pts03/d5xRM6e++PzonFvWiKfXd72mY0t8xK+iYhVmYtd4xK+iYhVmY
+td4xK+iYhVmYtd4xK+iYhVmYtd4xK+iYhVmYtd4xK+gPJdL2Dx9LpHgAAAAASUVORK5CYII=
+
+------MultipartBoundary--KA8azSkcpVUf9vwXhabozCwDP5IFrEYWTOrimXxAdu----
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: http://www.graphicsmagick.org/images/patterns/left45.png
+
+iVBORw0KGgoAAAANSUhEUgAAAGQAAAAaCAIAAADOqG6yAAAAhElEQVR42u3WOw7AIAwEUa/vf2en
+zIcmW1g40dDxQIjCxSgiqiqWJQl/eFaVpPUSvnoO+ccn/JyxCXM+3G8HA/83yvO62T7nwz2b3v2l
+Z9O7v3QFnfXa6SzD6SzD6SzD6Sw6q8fpLDqLztrudJbhdJbhdJbhdBad1eN0Fp1FZ213OsvwAwln
+20Nj+sMDAAAAAElFTkSuQmCC
+
+------MultipartBoundary--KA8azSkcpVUf9vwXhabozCwDP5IFrEYWTOrimXxAdu----
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: http://www.graphicsmagick.org/images/patterns/leftshingle.png
+
+iVBORw0KGgoAAAANSUhEUgAAAGQAAAAaCAIAAADOqG6yAAAAk0lEQVR42u2UsQ3AMAzD6v7/czq3
+yBDBRkoj4gEcZMIxxrjSRMQJnjtvPIeCseA5FHpclkB2LH4OhR6XJZAaq0UOP3qOZj4h7UQQj3+W
+wGQsyBmBHpcl8B2Lc0agx2UJvMZCnRHoMQLa5LRTb/b4ZwkIYzXNodDjsgRWx+qbQ6HHZQksjdU6
+hw0eM4F1IrjHP0vgARmJqB9/UqYBAAAAAElFTkSuQmCC
+
+------MultipartBoundary--KA8azSkcpVUf9vwXhabozCwDP5IFrEYWTOrimXxAdu----
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: http://www.graphicsmagick.org/images/gm-125x80t.png
+
+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
+
+------MultipartBoundary--KA8azSkcpVUf9vwXhabozCwDP5IFrEYWTOrimXxAdu----
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: http://www.graphicsmagick.org/images/patterns/octagons.png
+
+iVBORw0KGgoAAAANSUhEUgAAAGQAAAAaCAIAAADOqG6yAAAAoklEQVR42u2YywqAMAwEm+D//3I9
+9KD2YbsHoZiZY51FWEFjLOecbphZaqicsP5RJbse5wWfGqXp9gkE9H2a7OZj+r6SrPJhfUuv77+W
+xTv90vf1GFCWAGUJUJYAZQlQloB3p9UR5Tsa1vc0mO5Hycj+NXG9T2vt1YD+42i3v/ztztlnrfvs
+s9hnfeOzzxJ89lmCzz5L8PndEaAsAcoSoCyBE8A/ClpmlR0rAAAAAElFTkSuQmCC
+
+------MultipartBoundary--KA8azSkcpVUf9vwXhabozCwDP5IFrEYWTOrimXxAdu----
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: http://www.graphicsmagick.org/images/patterns/right30.png
+
+iVBORw0KGgoAAAANSUhEUgAAAGQAAAAaCAIAAADOqG6yAAAAcUlEQVR42u3UIQ4AMQwDwVjq/7+c
+A0XVIQNLBhuWRUaj3Z33JM0M/d9P56zOfjpndXbdp21WZ1fnrM6OWZiV6ZhldMzCrEzHLKNjltEx
+C7MyHbOMjllGxyzMynTMMjpmGR2zMCvTMcvomGV0zMKsTP8A1eDPWgo5IvkAAAAASUVORK5CYII=
+
+------MultipartBoundary--KA8azSkcpVUf9vwXhabozCwDP5IFrEYWTOrimXxAdu----
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: http://www.graphicsmagick.org/images/patterns/right45.png
+
+iVBORw0KGgoAAAANSUhEUgAAAGQAAAAaCAIAAADOqG6yAAAAeklEQVR42u3WsQ0AMAgDQWD/nckA
+qSyBCNFTXoFcvmemXefu+O0xvmCRR/nHjz3KP37sUf7xY4/xBYs8xhcscjezN5c96PMLFjmdRWf1
+OJ1FZ/U4nSU4nSU4nSX4/IJFTmfRWT1OZ9FZPU5nCU5nCU5nCT6/YJHTWYIfNabPTygtJ68AAAAA
+SUVORK5CYII=
+
+------MultipartBoundary--KA8azSkcpVUf9vwXhabozCwDP5IFrEYWTOrimXxAdu----
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: http://www.graphicsmagick.org/images/patterns/rightshingle.png
+
+iVBORw0KGgoAAAANSUhEUgAAAGQAAAAaCAIAAADOqG6yAAAAoElEQVR42u2ZQQqAQAwDrf//cz2v
+eGjs6iZs5u4gMZSAkZnHWyKi87ic5+yr96EVVmZGRP8lVDxuFkA3LJVSTPG4WQATwpIoxULPppSG
+icoO+trjmwVQCovtCqzyuFkA1bDUSzHF42YBAGFJl+IHjxkYhob6Dvra45sFMITFdgXYPG4WwD0s
+to9J5XGzAB7CovqYhB5TojVA2HaQ/xsScQELLqgfO4jnggAAAABJRU5ErkJggg==
+
+------MultipartBoundary--KA8azSkcpVUf9vwXhabozCwDP5IFrEYWTOrimXxAdu----
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: http://www.graphicsmagick.org/images/patterns/rose.png
+
+iVBORw0KGgoAAAANSUhEUgAAAEYAAAAuCAIAAAAa6/jkAAAaVklEQVR42lV6WY9lyXHeFxGZZ7n7
+rb2q1+nZF46GM0OKNEmREiUQEiXKkEDDAmxANvyDDNiwHgwYMOw3L4ABQ5YECbYsW7ZMkaNlNJzp
+6emZXqq7uupW3brb2TIzwg81pOVA4jych5MnMiK/WL6gt37mC0zkmJiMYWYwBRGZGQAzU1UzIyIA
+EQkEERERZs4ccu+cEJsyITfcEn7J7Eh56opr1hualV0MpscuPLR1Bw2EinRj6ExMlWAEY3YO/kDQ
+Y7nL8kfr6iS4lBRQM0um0YgASRDD0aD/9tb42uHL86OvfLa2xx/+GbvV869fu/38zvHDe5/eferM
+TAFTM4LCYFADE0AACGoGAERMMDDJ1XszqJFpMjWFmiVjapzbEJYxDKJlWR4T1CwzIyAQWlODwsgA
+M5jBAMBUoWQClEpDZmVepmTImDQZQFCQEomBBTHoJrRVc1HXFx35OlJXJeJw8vSsP+blegWCSwqQ
+gonUSBOI1YiTwa60goEANeUr1UCAwQwExGDQwIAwvFDneWbmUmpSarXJHCFJH1qxnWCzpuRMoqEF
+OksJpCAzURCIeqKl5kEG1bjX1B1voiIZIRJFwMBmFo2McBG6vzy/XA8Ob/a2inWptrNZnJ9+8ODB
+yaf9oUzyzIHEAFUlJKgpqRkDYKKrYyQA7MwMxKZRjA2GBFUlFlUAIFMllpaj6jL4AXhdhUeZRZdx
+mUehi84qYzGocWsawNHMAAUncs55dlJr1t2+lj1/dO3jcvbJg/Vq1UUzEOzzgzQ2Y8SUn0W6ubcz
+2ZuuwfrOrcvZZb5zdOelo67dPPrgLxxYAMBIAVA0YzMkTSzCAAA1RVIRIQIZqZmqXjmiJ4FRMoMa
+kkJjJ9IZl2QTJk68QbcS7Zuvk6uR2JQUHSEYQVMAJWJ471zZqa4nW5vXrqej6bW6jpvLVkO72Ghj
+XhwQFQYiYnCSaFFHl8H9aHozf+Xbu5p+/mz+tOdo9rTprHVMkcwg5EDE7goQQhIjUiUyExOlZJYA
+IyJVJYInZTZhImLTlIyQDNTWLHVKrg0k2VFOfcOjuspyHw2ksiGDI05ImmqWYJoTl4Uj5zTrH79x
+Mx1MErPfLctue8uB7mFTbdKVP4AZYkIKC1pXm4tId5NHZ3sp5pv2rKnd4vyiqjvnxIjABicCgGJS
+IiIDu07BnTGbEtgp2IwE5ryFnJE5YiElRIIGUkKptHNpa+KTjGUTyOiQSjFpE3lH3iymKCF1ZEtv
+6CSRaOYEYkKL7Xw9JcpSwWSFlPvDYtDnoqx//FnzbOWShMwpQSFIykliVZzP16mP5d2WGApPMW9D
+TAHOew+AiYXIibCDWfKqBs7VjCMMiRnEIIBEhDOwsGaOmEQNZFAiA9Xi1UERPdHKdJrM5a70PaUO
+IVTiLGogjmK+Ct+8fnvV7/2P+aPLkouhG+zx19+flyf06OXtc+ZdP97sc3/QKyQ91Xvri7amkDk/
+rV0pNn35YLrbO12eC7xontQXzlPbtqlhNkdERHQVXQRgxwZ2BjZVjZaRmQBoNaVkMBWYeOSEzBEZ
+hWjCZIzE1A/xFydHY7ZZXLxYjOqwcG3D1HUcCyZOk2UpH2Lt6vBLxdGdTXjoO4x7m6l/kXt//yPe
+/5sT0Fm336+H5XpQ1sOsdU6r23z95sVu/X51/ocnH82G6oZ+OsF4q1c7WJO80qTcHmXb6251WZ/5
+3DlVBcGZIyYmx2wAM6loShqVkjKbkicCkyIxJ4E4vgIOu4pkSbhD+nZ/8o+z7fsnH/5FcbEXw1kM
+uYgjvtjUY9c7QHVzky+drHrZ/mo1X84obd+5s1u14Xvoj0+ePjjSXZeXJ/Nsthy7AVyBbADkyD0y
+942dvbd29//lwx8+lXh08Nq161+sTXLmm7vb1/YOhYb3ju8/PX7sCu9SNGYKCDDlXMl54SQIMZLL
+jrSZW1iqspowCRmALJB3nHKrG4IkZ+ZriX22l3L892c/2lDVz/xJO6+jJO5L6vpZLwOHZtG2fLDC
+lteLLGoepV6+sxhfQ3Fzdv7Axffa8z1pXtkuJwkkiWNnhAQm55NEl/BVPsxvf+0PptWv/sY/HB68
+mlXZuF8WWwB1zSoZ2817N0dZKQf7uzEmAsAAwRPnPhml4fjOm+9+/2D/iyH06pbqdhPiKqqSg+cu
+IxVQHeMqxKXxpE2/rKO9uKh8l4S2kB9Q6dmn1OZJt9jJuh6ZpExymJrOpHNGTjLXRGl1ac0zXa9T
+U2kssqLvc6MkrgCx9PrsChZPHDbnp+712++f3f/2t765/9JLw37hh0I9Ji8+L8rMe0fXjm7IndvX
+GKYpMZSZC0bPsagbbb32xju/deuFbxzd/NLNW6/0Bltdp+Chpci8iV7m6Kf8dv/whcG4d8OnW0XI
+U1N4VyYbdpiaDMiNTbbJDwxbRTltqmmruVrtsHKpZUKishzK9viT1fkqLkpyW37gs34FZERZrx+V
+mJ0Wvish1lGepm07na302u749S8kT2BDrEnJ6nZ5eXZ0uHV445a8/MIN55igMUU29uwzp2IG3tu+
+/rPD7el0q7d/cGNn69Xc3cpsn7i4qCoNdjjc+9Ybv/pLN976hVX4Wrvx68cxdUXiCbkdVwyJOeo0
+L3ogTSErs6F3+SoAsnCyUesKL8xou0HWZ5U2rDzYs+Sj4bytitJ3QlQWeZ5bFxw75iBeU9c+1PrP
+m+Vrr7xG44kScUpEKXbx9NnjnYNRPhjIF159zjthZgaTEZwXUbLGkE+vvzruX5PIGpGMi8GkN96m
+0XTU73/F8NtC3zl7PHn4w/zZh4ehZhISGUs2Je9j1LYzIdNQt1WtzaWuI/ttPw7GF4Se9K4lL0ia
+i++POTqvKSRtyNpUd+2mFa6Z8/5gOBxTFVIhm6MsRNS39n53Ev7o3odfef3d6fWbBDCJOnNFBgr5
+ACziCu/MIAzPFrpkcpXiwVgtxVSFNRxKgOqtYenGL+3dLA5/8OMX7s2nYVFZc+G7vN/L62wr5pr7
+4O3pYj6MssOZOKXYddSsGKx+VbcfIowKGUXHDRUpbnJd6gaxJinGk4P67JFp1zVdhJyvl7mrdiaD
+thjYvgTEyGk09APrV3f2z+79KFEEgw1RsEIzRbm1v2vdwpScY4ZBnHeE0lsHcZIcGYnEzflidZ8w
+cVqENHu8aGxz8XOPf/zc+38SZdZwGWnc6mZA/UChzqxJdTRTL95JYRwbdeTVUSU0QP8ayWdpNkMc
+mvdF+ZhjS4m85+V6yOSHUx2PT5ezCtywJFjo6nmzGNlO23UFZcPOuapuT47PR+3+ja2d53aucuqn
+3cmj5cMbbnitnNYXa+XgoMkAJnPCn2dRBIaFsDr+9AdNc9kvbufZ9nLz7Gx5uXf8h/vPHh827emW
+89rfWLvSTiJCVW1Gro0NxVgQchWKaV+LImCf5A7lRZcFLHsFuyLfLXqO+STPm+Vlr0HBSPX5xfqk
+IQx3dxfrVde05qhL8WxZ37hWjLYGYkkItjyli83zB9eLLb379G6Zlh+fPH5y8bhzzaP+zkuj27fL
+o/n5iYPqVb1HycBwZEKAONJuc/5+t56Pt+joqHdb9C2XehfH53I8GI526vw8i4+6y8u0mpaTQZ4r
+8zqGnnM+WRat9DLDuh9SHsVHcgttptnRYAebamrYhPV4mB9Mn1vMzztHTR7mEg1+mJfT5WZXcgHP
+CevLedu10719bTtuImpDCKdPHpzS6j/9/n88bjduXOzsjIe7g+O0mh0fL8uXPYYOpgDSVYEBYlUQ
+wCbUOW7R2Hq5vdnC1yZ45+m93todD649ky7nfEHVymo1zVXHyffLXj64MXvyNFPpcYbGxtgqSAKh
+KQZUjv3zg36/d3nv4Y+bJ48GzU6/2BvkGgcX1UXN3bGQTzrZhN2InYAipbMy+yhUy8Xs4PptC5Ta
+ZCF11v7444eDW/u+X9w4mNJISpiFuJHQaLOh1ag8cIQEmAAkBDDIQGxEAEQTx8plnYyPFljQpMN+
+b7yO0tHMqnOua8RJVkqTlmGTZrPtnaPY71MbilSW5P3lQlQjqbqge6Nia7g8e/QJP/kgmz+p1i9J
+r9qc7E3H2rC3fJgwhOs7dSH0gqih34Y+62xx8VLhZZ1w0aDGp6yXTbe/O3TTPjtuu02loOTNOleU
+T3H54Pgjx1cl4E+ELBpxq0W/dzAqdtSJ7Pysy770pH70J/TBzxzmu89gs67WLvYVkcpyvHahXTc7
+Cd3T89GkjBxc1RU7u9W0XMyehJRSFhdy3t07l2Zjsf3i9ZfeQV511a3BaHE56+e9XpfeqDL2vFp3
+a421Yx9ZlB1jEWo4r9WCz9dI8gO/9mWfydZhHdtEas550hZtRT05X58/un/fXeXfgAEGgCiliHJ8
++/pz33S0ddlm/dFof/zJ7ecvR/nR//mDD3ZO5q+Ny9682WrQJElMxQu31nc/jssmM6W2K0JACovF
+U7rxvMt7Pvfk/bPTp7ttosr2brwyvP0C6ngy+/Dis/t+UBaOuanKTkR42bQkSGoFkMwycs26tk0X
+FlXehI2n/9qdaBpLcJzQtbUIMRlxUsS2abFZtt3cRYUTAguBgBRTPx/e2rn+1Q6HT87D/uTmOy/5
+L33p453pxaravbRv3i3/erKS22cT/vQzj/bRYnmR8cHBXrW4PxruKofYrlvwUjfrp5/cOrqTS783
+Go77g/Cjv0AwiinMZ6naNMfHY6K6rlpokfmznChUC2t6DIlq5Ik4dz6PpvNVftlC6YeD+kGo3Rmt
+zjcD8a1uvHkihnVt156t5rPP5qGGvHznCICIiGOzVAzu7N/8RuCDk7N2MJq8+OLOzdu9zJeX8/6D
+u/Knf/nw/um8Nr1+uHc4GRXVxmusqio1m0wo720hKywEc37m9ZyqTd0sFpvBYLxu68v1s/727jo0
+62ePysuZs+RUo1fHLo8kBkADKVPKlCCZWVoj5qOdnf623F+ad/+6eLIeZHFTt9YWI5e4USMyaapm
+vW7bjbqY9/ulHN08iioFG3Hyg6PdvXfbbnJ6uh7k288dPjfo22qxfvQpHn5qx4/i408/ml88oNV5
+uVpNDw/Gd+4QePHspGrXImxts64WnikRli6JL2FUx9Zyu2zOV5vT3qobLWzYZNkCRStJeJMJMWUK
+F61FjByMFaRCiBJW0MOjVwYLwUrfc8t/Nn8/wq2rxWic5+UoUANWB1btEMWTK3PhTPlyU19umlWd
+qtY421lWuP/gkaqbbG0r6fxi9eRxffIkzufdsp2NVufqu7WL+50P582ll/Hzt6NHyhBhFENyNk9t
+xypRpYuSQilpM39WzWe9ICPkuYiKmQeEUp4HkJmRmpAoWwckwwZ64tqnWUQ5nNIET5vU9/9qdXza
+8cXy9OXnpr/+W98b72yppV6eOy/ClHnHDDjzPXFV29ZQSzSwwtWJm6pX7t689cXBYLdt5yYtp6Kg
+EnRZV/c26cQVce3s06a7sW7cs7OPP/nAxXbo3SiyhdQW0hkmw1G2vAyIlswBJduAeMfvILg5x5CF
+QZ8Dy8IaUjh2juFNwL5DqFmIaSOdmX9ldEhnAeb+HY7/t9S7TW9wy33nt78zvX6gn9wFmfeSIoWQ
+yDwcgcwV4hwjxVR3FXUhXx0Pcre3d3C4vUPUv6ifCKeyH6l5vFq8f3H6/jLbFMrO+C6vvtKQvTeT
+1cVWjiZYX/HUUWMoWCzp2pTJMgYFUOiGZV+YVhpwMMmm+eZsVtcbJc7hvDoFWkud8CJZJwRIHdlH
+2fPbumx+tK3/tn7YpfV+wV//lZ+Ta9sf/c3Du3/9ye5118XQNC0l9Tkrc7LO90q3NeipOYX6ooHO
+kq7qulsuD4b9GxruV+sqVNZtPt5cfojusieOWXY5uzE/X55+0g8pc7YhrT1cpAUjduEoGw99+RFd
+5GCBGxR530SMGnT9w+3N1ujBs+Nh23mCN2QKZlYzY+6cVuCFxgRaJry2cy354oPJ5X+Z1Cf3FofX
+89d/7cuD0n32v+7/8e//1Wq9un5tX5ESrOcLEso8qRRZL3O74xGBQAD3M86cWKoeP3v4n1f5tO0W
+56uLTuuMNqWzImP27maFF5uG5pcrszJ3CQZFGU0JRrzU9iw2WNnt8TZ15iLGKnmItcdnPi4XD7KV
+HFKxHX2AKMcgHUGZ2cRviBagJWidYg03mOz9t3DxcBA1i1/45uE3fu7LHz08+aPfuzf7bFVXqZxk
+Rs6LIBMmn2jjC1cOeu2G3Gg45J+08wnELhFSFx523QOzJKJdXW26riryolc4YJT3XrhM3LnHZcsp
+DI3UwEoQc+QuESWL1qTJIhyEnrF4GJlbhOaE1x1hZEZiJNpL1sI6oY6lg59z+qxZXXBqgLVpctnd
+9nLO1klvr781evWV3/0P773/3r1Rts1KeeYVRuIKnxEzLDJxXvQsuvls4bz3V9zRFZskkhvMNIEj
+YAUcUM4u2/NNhaYTbiqZ3R7tfLXb21RPqtR6csYAjIxM0RFOu2pK/ZIzPxgca3XSVNG7M2uDdyyk
+IX7WbGI2OHQMps5nZwkn9eYJ6jVSw9yadRFbvfKCUsryPGF1dvl7//5HT467yeDmztgtL046yykp
+Xe3KyTj08qHjwfHjp0jifqoPEREBKSN44hrmAEfo+oV0g1FzuW5C2mAV0Xw27L91uP3Kef7p4lGl
+IWPviJhom4vnxGUet/1oTO5RjO8164uJVCluFIOWnJIjv2CdafuEOGeqmuasi3PitedgiMaNqnBW
+5kUbwwC5iCsOBy/eiFl5tr+7e/7kcUIgzcF89b9Gyj5zvvfseAYlBrm/ZR8xM5ZkCOAOICgThIhH
+fYldnC8WEdUv9Q5fe9wtJ9X01u3xcVptlszixWUkE/VbHnlKWRMaikGjgWIABRSadWStWTSFGFl6
+lLRM8IgbxzXDosWgKpzUpCxXpXfiKdllEX/w7EEzTIe3tx49uLeaJ0djo0SqVbUZYwIWnxXns1VV
+tf2edHV0V/YRFlUFoBQBQIWIQCqmUGmVJtNJWcrDp+sLjvfy/GK9fvbkQU85RxZD3SCOrMexo4hA
+GhEMIDKNViEBrlBLkiKMzBIEoA3xxpSIFdBECZYESTWpZuJFBv1ErcN5L0rZy6w7f7auZoFbR44S
+k2tjfZbiDSlGRbfA5fml95kahxCc0ZU9zPQn9cXnDwKQjNs2DPcO33rrZ6bj4Z/9+f/8gz/54z/W
+VFIus7Nbef6dbPKWDnpt7bKoTgBEpsBk0L7ytvNP0XSMRAZLV59nMEAJpoCCzEhJU7KUkMg60zzF
+oXIs3EWGJ3V1drE6n12UWV7mo1q7tgvQ3CxWq42aCfHF6RkiWBAbixEOdEW+XlF++Om9AmCmbaRb
+L7/x3b/7/ddfe8M7/tabbz2/t/Vvfv93l5vWd/mfb6o4Ll/51s/TRx9MHhxL3osMSRoZgbVUG3tX
+tgicohgU0RhgEBkoEkeLKSVjMlXAJbJoFJKlkEjkmaT3L+dPF6tuE5zmK4S2T/mwiKlKdVewbapI
+yFarar2ssjzTKKBkgeTdt18DkX3OwxIRmD4XmLr+9i9+7/t/50vvChNg2TS79vp+XuLhvXth1Vzf
+vf4rf+/73/gn/+Do6185PX725PizQIlAlEAEVqqYz2JqiRIMJgkMkIkYcQPtLEVQJCRigJWsjbGN
+XTkYbvqD906OHy8XAOXsiT0EnXbMlOWZtl3b1L1h+dwbr5yenzfLipTZ4L3bXAR5553XQHblaHYV
+csFEAFTVWiv3b794/c5tYdO0iGajYrpX9D7+6NPTJn7ve7/2W9/7zeF0V6b7u9/5pu5kH37w/mZx
+WWQ+Ealzs5BmllpiA8OuCG0yo6ipNlOQQhVkMDIGMYmU/YGbjP/05GzZtI5EkiYLgSMowZA6dUR5
+IantBpPJZH//wcOHMIQuivNZ5k8fLJlIiPzVYvJgd1V+BVbX3//6t7/7tXffnjjxgJpAM4ArbdTj
+zS+++faXvzY42IewwoDiuV/7R7/4T38ne/vNR/W81raSdpWFJnPG4ozMXDS0qq3GNgUYwQgqbOzg
+hEi80SQ7+vIXcOtw0W0gnIAISyro2Dqh6KxFtY51ZBmPI3D3hx+Es0DRhVYpuVBni4tO3n3n9b/d
+ezAYwzEsStzeu/PdX/+NO9f2AGjqzs5PN+3cUnVxPt8eHXz9Z7/9ykuv5nn5+dAAjIyL6c7N7/7y
+skj33/+rYtW4lHdBVs5feh/Ekkh00hJFlkL5qnNjwpa5NMi7kjpP49u3Pn78+Hy2+JzvBplCjUCw
+KyF0IZmmGLvNah27JOSEZNQbpwbHn53+P5Wu7g8DbI4clGNH5XN3Xr1xuEuwqE0X1+Raa1qr/cs3
+33zuhdfzMr8aIPkJVKaOBHC33vzq/tvPPzy+fzI7qbuqTm3jjJMwCbMnYiFmIAm1nlqhi9R0k5z6
+mfUzFMVff3TXWUZEzP/fqIKZqSmMiEwNFlHkPWHZLDeUMOpPq1U8P53LO2+/9jkY/ATBxUTFolPL
+Ry++8Pqt64dMJhwidcvL03rZjsqj7b1ryASU7G8BZWTOlKQDxAZ7d1765V8YvHj7rF2eLs8Xy8uu
+SwpTtmiaKNWZa3I0Ofeu7Zx11axZdbG9dePG+fnl2bML73sizCJOxEvmnHfup4mOpZgogUDaWdkb
++NKtN8uYNHZW141LUDEGEymMwD8JTGqmQNkbCOGqecSw9Xy1OU97L0/Q84YEKMA/VckpR06atw6e
+zYN2Xvz6b7749d9oN0/OHz+eHX/6O//in18sFj7PjLgTCYZI5HsuZORaYUJbN65NO8PRugWMFUbE
+cCIkltR5b0lVtQ0xhs6UO7XZfDbcL4thv2o3whGsrpEoLAUzJXIKMCezZEaU72/ve0YdAqOq17P5
+7LS5aMSKtmsswBzj82EjxdWkicEpGeXaNfX6ohhtw7OB8/7B0cs9N/J+Z9I1y+SgsGRdJI7Qp08f
+DXKeHu45ZOfzFamNBy6XVLXWJooMcFI1iBERCwlnDk6DxESUt9PrA3C+Oot5yUUvb+v2/wI+s2vY
+DDub9QAAAABJRU5ErkJggg==
+
+------MultipartBoundary--KA8azSkcpVUf9vwXhabozCwDP5IFrEYWTOrimXxAdu----
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: http://www.graphicsmagick.org/images/patterns/smallfishscales.png
+
+iVBORw0KGgoAAAANSUhEUgAAAGQAAAAaCAIAAADOqG6yAAAAhUlEQVR42u2WOw7AIBTDXnr/O6dD
+pX5g4Q0VGZwJeURgWVVlu6ZJgg/8KLa8w7akgV7XCR+57fuZvQ/wmX8+aoIXkjnOauy5rBQvBPM4
+LyRzFZ21zHFWY3RWh6d5IZnTWXTWP6Oz6Cw6azvHWY3RWR2e5oVkTmfRWf+MzqKz6KztHGc1dgJO
+Q3O1xztF3AAAAABJRU5ErkJggg==
+
+------MultipartBoundary--KA8azSkcpVUf9vwXhabozCwDP5IFrEYWTOrimXxAdu----
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: http://www.graphicsmagick.org/images/patterns/vertical.png
+
+iVBORw0KGgoAAAANSUhEUgAAAGQAAAAaCAIAAADOqG6yAAAAVklEQVR42u3QsQ2AAAzAsJb/fy4f
+ILLbU+bs3c3MzOyu/u5n+M2swKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzArMCswKzA
+rMCswKzArOAFusZLNEpYWMgAAAAASUVORK5CYII=
+
+------MultipartBoundary--KA8azSkcpVUf9vwXhabozCwDP5IFrEYWTOrimXxAdu----
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: http://www.graphicsmagick.org/images/patterns/verticalbricks.png
+
+iVBORw0KGgoAAAANSUhEUgAAAGQAAAAaCAIAAADOqG6yAAAAeElEQVR42u3YQQqAMAwF0UZy/yvH
+A0jEWZnSeUv9CxkQpbEaVfW8GBEn73PCQ+yyv5Y+MxZgLMBYgLEAYwHZ3Xj5mh67b2NN/t/5a+9r
+CBgLMBZgLMBYgLGAnPD/ssve8yyw9zUEjAUYCzAWYCzAWIDnWWDveRbY315MYHUYmNgWAAAAAElF
+TkSuQmCC
+
+------MultipartBoundary--KA8azSkcpVUf9vwXhabozCwDP5IFrEYWTOrimXxAdu----
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: http://www.graphicsmagick.org/images/patterns/verticalleftshingle.png
+
+iVBORw0KGgoAAAANSUhEUgAAAGQAAAAaCAIAAADOqG6yAAAAsklEQVR42u2WMQ4EIQwDMeL/X85V
+V2X3bg0bCSNPmWJARiJGRLQEAM/zvDfzGIdF4LAI6LAAvHKwoocOKyIArF9R0TPmvO37FJdL5FTP
+TFhZvYKQZ/WDj4iVx9TyeBsSOCwCh0VwG5ZiD6r23Ial2IOqPb+qg1wPqvb871lCPaja8/SDl+hB
+1R5vQwKHReCwCPoO/UXF03foLyqe0TboLyqekUfT0uM9PY90e1C1x9uQ4AOSSggr6s8RfgAAAABJ
+RU5ErkJggg==
+
+------MultipartBoundary--KA8azSkcpVUf9vwXhabozCwDP5IFrEYWTOrimXxAdu----
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: http://www.graphicsmagick.org/images/patterns/verticalrightshingle.png
+
+iVBORw0KGgoAAAANSUhEUgAAAGQAAAAaCAIAAADOqG6yAAAAr0lEQVR42u2WwQ6AIAxDV7P//2W8
+mRglWllkI+2Rw2O8Aytaa3YJAJ1fzzdTXkeyiEgWEUIWgJAr63JeyQLQ+wLZsUpz/BFnZiFjLcDp
+ylrjebGcrqzxsdbjaBsSkSwikkUkQFbd3sRyhmRV700sxz/RUizy/zm0rFrPi+XQsjL0nVkcbUMi
+kkVEsojcyMrfd2ZxTrKq9J1ZHD9wVm2R/8/xnGPl5HjFvjOLo21IZAeokL1n6VT/8AAAAABJRU5E
+rkJggg==
+
+------MultipartBoundary--KA8azSkcpVUf9vwXhabozCwDP5IFrEYWTOrimXxAdu----
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: http://www.graphicsmagick.org/images/patterns/verticalsaw.png
+
+iVBORw0KGgoAAAANSUhEUgAAAGQAAAAaCAIAAADOqG6yAAAAiUlEQVR42u3WMQ6AMAwEwbP//2dT
+UCCS6orIjrSUA8UpFNmoqoioKm0PvnhKes9r/whf/DvL9v82338vBu4b5dm+4CLP9gUXebYvuMhD
+0sxlAz3b7+OLnM4ynM4ynM6is844nWU4nWU4nWU4nWU4nWU4nWU4nUVnnXE6y3A6y3A6y3A6y3A6
+y/AHzkPwTN3zSloAAAAASUVORK5CYII=
+
+------MultipartBoundary--KA8azSkcpVUf9vwXhabozCwDP5IFrEYWTOrimXxAdu------

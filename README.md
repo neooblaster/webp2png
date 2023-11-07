@@ -5,7 +5,7 @@ by [GraphicsMagick](http://www.graphicsmagick.org/formats.html).
 
 ## Requirements
 
-As the Command Line uses the dependency [`gm`](https://www.npmjs.com/package/gm) (**GraphicsMagick**), you have to follow the [installation instructions](https://www.npmjs.com/package/gm#getting-started)
+As the Command Line uses the dependency [`gm`](https://www.npmjs.com/package/gm) (**GraphicsMagick**), you have to follow the [installation instructions](https://www.npmjs.com/package/gm#getting-started) ([Direct Link to Download(Sourceforge)](https://sourceforge.net/projects/graphicsmagick/files/graphicsmagick-binaries/1.3.42/))
 
 > First download and install [GraphicsMagick](http://www.graphicsmagick.org/) 
 > or [ImageMagick](http://www.imagemagick.org/). 
